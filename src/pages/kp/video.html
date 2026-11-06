@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set F = 'images/filmbilder/' %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Ansehen</p>
+    <h1>Videos</h1>
+    <p class="lead">Hier findest du Videos zu ✶ Frau Kächele &amp; Frau Peters ✶ Eberhard Kächele Musik-Comedy ✶ Teflon Fonfara solo Classic Serie ✶ Teflon Fonfara solo live/TV ✶ Trickfilm</p>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('images/filmbilder/introbild-video.jpg', 'Frau Kächele & Frau Peters', '', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap">
+    {{ m.privacy_note() }}
+    <div class="video-grid mt-1">
+      {{ m.video('eH85xP1iyKs', 'Die Spätzles-Klappe', F~'klappe.jpg', 'Neue Erfindung', 'Kurz-Info zur neuen Erfindung.') }}
+      {{ m.video('rhWyDU3eiWs', '„Die Schwäbische Eisenbahn isch a Sach“', F~'eisenbahn.jpg', 'Eberhard Kächele · Mundart-Comedy', 'Alternative zu „Auf der schwäbsche Eisebahne“.') }}
+      {{ m.video('k-ZC6tbjFhY', '„Heiko mit dem Bollenhut“', F~'bollenhut.jpg', 'Eberhard Kächele · Mundart-Comedy') }}
+      {{ m.video('u6NDENYIpwg', '„Vegane Kuttla“', F~'titel-vegan.jpg', 'Eberhard Kächele · Mundart-Comedy') }}
+      {{ m.video('YbojXEnQ0IM', '„Stuttgart isch mei Herzensstadt“', F~'stuttgart-herzensstadt.jpg', 'Eberhard Kächele · Mundart-Comedy', 'Liebessong für die Landeshauptstadt.') }}
+      {{ m.video('ESiMxcSs_z0', 'Teflon Fonfara in SWR Landesschau', F~'swr-4.jpg', 'TV-Doku', 'Teflon Fonfara und Frau Kächele &amp; Frau Peters (2019).') }}
+      {{ m.video('Zye2vf2K-40', 'Xsälzbrot & Hefezopf', F~'xsaelzbrot-hefezopf.jpg', 'Zeichentrick', 'Frau Kächele &amp; Frau Peters. Schwäbische Weisheit in 45 Sekunden.') }}
+      {{ m.video('T22yezRVaKw', 'Der Briefträger kommt ins Haus', F~'kp-brieftraeger-37.jpg', 'Musik-Video', 'Babs Steinbock als Frau Kächele, Teflon Fonfara als Frau Peters.') }}
+      {{ m.video('3jqO8ji850s', 'Gesamtfilm über Frau Kächele & Frau Peters (SDR, VIVA)', F~'kp.jpg', 'TV Doku-Mix', 'Szenen bei Stefan Raab. Der goldene Hefezopf zur Jubiläumsfeier im Stuttgarter Hauptbahnhof. Songs: „Der Briefträger kommt ins Haus“ und „Stuttgarter Nächte sind lang“. Der Minitrickfilm „Klinsi we love you“ zur Fußball-WM.') }}
+      {{ m.video('fVf-YPqAgG0', 'Kaugummi', F~'kaugummi.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer als Buchlesung getarnten One-Man-Show (Mundart).') }}
+      {{ m.video('frkqP-HtQTQ', 'Smoke überm Backherd', F~'smoke.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer One-Man-Show (Mundart).') }}
+      {{ m.video('bLgUj8mSuaY', 'Opel Vectra / Das Kehrwochenaggregat', F~'vectra.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer als Buchlesung getarnten One-Man-Show (Mundart).') }}
+      {{ m.video('t7FxfVdrg_0', 'Hendrix plays Dr. Schiwago', F~'dr-schiwago.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer One-Man-Show (Mundart).') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap grid grid--2">
+    <article class="card">
+      <a href="https://www.youtube.com/playlist?list=PLv40s9i9255R0ceFU9LKk-mLM-wZgLiW2" target="_blank" rel="noopener">{{ m.img(F~'kp-solo.jpg', 'Teflon Fonfara solo – Playlist', 'inline-img') }}</a>
+      <p class="eyebrow mt-1">Teflon Fonfara solo · Playlist</p>
+      <h3>Schwäbische Comedy mit Frau Kächele &amp; Frau Peters (2019)</h3>
+      <p>Hier findest du Links zu den Videos:</p>
+      <div class="chips">
+        {{ m.yt_link('8tVdLoCEU78', 'Gravitation') }}{{ m.yt_link('63EXpsmm8yw', 'Glückskeks') }}{{ m.yt_link('DAT66b_xzXs', 'Pferde') }}{{ m.yt_link('9YTwe7Xs87Q', 'Feinstaub') }}{{ m.yt_link('LSadZrtu5ME', 'Muskelfett') }}{{ m.yt_link('Wi_ytIDRPhA', 'Böller') }}{{ m.yt_link('v7I9PFAkltc', 'Weihnachtshund') }}{{ m.yt_link('o8pHWOH7-4o', 'Enkeltrick') }}
+        <a href="https://www.youtube.com/playlist?list=PLv40s9i9255R0ceFU9LKk-mLM-wZgLiW2" target="_blank" rel="noopener">uvm … ↗</a>
+      </div>
+    </article>
+    <article class="card">
+      <a href="https://www.youtube.com/playlist?list=PLDB0CB5790543AF5C" target="_blank" rel="noopener">{{ m.img('images/kp/2019/classic.jpg', 'Classic Serie', 'inline-img') }}</a>
+      <p class="eyebrow mt-1">Playlist</p>
+      <h3>Die Classic Serie</h3>
+      <p><a class="link-arrow" href="https://www.youtube.com/playlist?list=PLDB0CB5790543AF5C" target="_blank" rel="noopener">Auf YouTube ansehen</a></p>
+    </article>
+  </div>
+</section>
+{% endblock %}

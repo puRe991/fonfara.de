@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Projekt · Musik &amp; Bild-Installation</p>
+    <h1>Das Summen der Honigbiene</h1>
+    <p class="lead"><em>The Honey Bee’s Buzz</em></p>
+    <dl class="meta-list">
+      <dt>Musik</dt><dd>Teflon Fonfara</dd>
+      <dt>Bilder</dt><dd>Roland Bentz</dd>
+      <dt>Veröffentlichung</dt><dd>Kunstband mit CD, April 2019</dd>
+    </dl>
+  </div>
+  <div class="page-hero__art" style="max-width:340px">{{ m.polaroid('images/musik/honigbiene/Flyer-Weimar-2.jpg', 'Ausstellung Deutsches Bienenmuseum Weimar', 'Flyer', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap">
+    <div class="callout callout--soft">
+      <p class="eyebrow">Radiosendung vom 26. März 2019</p>
+      <h2>Hier anhören!</h2>
+      <p>Hans-Peter Zein spricht im <a href="https://www.freies-radio.de/" target="_blank" rel="noopener">Freien Radio Stuttgart</a> mit Roland Bentz und Teflon Fonfara über das Projekt, und wir hören Titel aus der CD „Das Summen der Honigbiene“.</p>
+      <button class="btn" type="button" data-yt="eMRbONkbPh0" data-title="Radiosendung: Das Summen der Honigbiene">{{ m.play_icon() }} Radiosendung anhören</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">CD-Info</p>
+      <h2>Laufzeit: 1:06 Std.</h2>
+      <div class="grid grid--2">
+        <div>
+          <h4>Die Titel</h4>
+          <ol class="tracklist">
+            <li>Bienengeflüster</li><li>Ankunft der Bienen</li><li>Süßer Honig</li><li>Honigtanz</li><li>Bienenkarawane</li><li>Das Summen der Honigbiene II</li><li>Das Summen der Honigbiene I (1987)</li>
+          </ol>
+        </div>
+        <div>
+          <h4>English</h4>
+          <ol class="tracklist">
+            <li>Bees’ Whisper</li><li>Arrival of the Bees</li><li>Sweet Honey</li><li>Honey Dance</li><li>Bees’ Caravan</li><li>The Honey Bee’s Buzz II</li><li>The Honey Bee’s Buzz I (1987)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="prose">
+      {{ m.img('images/musik/honigbiene/logo-honigbienen.jpg', 'Das Summen der Honigbiene', 'inline-img') }}
+      <div style="max-width:240px" class="mt-1">{{ m.polaroid('images/musik/honigbiene/tef2.jpg', 'Teflon Fonfara') }}</div>
+      <h3>Die Musik</h3>
+      <p>Bereits vor Jahrzehnten kam es zur ersten Zusammenarbeit zwischen dem Maler Roland Bentz und dem Musiker Teflon Fonfara. Bienen waren damals schon das Thema und Teflon Fonfara komponierte 1987 für eine Bentz-Installation um Bienen und Bienenkörbe das Musikwerk „Das Summen der Honigbiene“.</p>
+      <p>32 Jahre später sollte die Idee wieder aufleben und zur Vernissage von Roland Bentz erscheint die Neuversion vom „Summen der Honigbiene“ auf CD.</p>
+      <p>Teflon Fonfara präsentiert ein Konzept-Album um Musik mit Bienenklängen, reichhaltig ausgestattet mit kreativen Ereignissen aus Geräuschen, Musik und Klängen.</p>
+      <p>Fonfara vermischt das Bienen-Surren mit E-Gitarren, Chören, Orchesterklängen, indischer Musik, Industriegeräuschen und vorbeifahrenden Rennwagen. Diese bunte Erlebniswelt schwebt auf mystischen Rhythmen und modernen Beats und wird zum spannenden Tongemälde voller Überraschungen.</p>
+      <p>Teflon Fonfara hat Tonaufnahmen von Einzelinsekten und Bienenschwärmen digital auf 440 Hertz konfiguriert, so kann er die Bienen in seinen Tongemälden mitsingen lassen, darum sind alle Titel auf der CD in A komponiert.</p>
+      <p>Es entstanden 6 Werke, das Erstlingswerk von 1987 ist am Schluss ebenso angefügt.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Die Bilder</h2><p>Roland Bentz</p></div>
+    <div class="gallery">
+      <figure>{{ m.img('images/musik/honigbiene/2018-Wildbiene-im-Pollenrausch---w.jpg', 'Wildbiene im Pollenrausch') }}<figcaption>Wildbiene im Pollenrausch</figcaption></figure>
+      <figure>{{ m.img('images/musik/honigbiene/Endemische-Wildbiene-an-Kaefer.jpg', 'Endemische Wildbiene an Käfer') }}<figcaption>Endemische Wildbiene an Käfer</figcaption></figure>
+      <figure>{{ m.img('images/musik/honigbiene/honigbiene.jpg', 'Das Summen der Honigbiene 1') }}<figcaption>Das Summen der Honigbiene 1 | Farbradierung</figcaption></figure>
+      <figure>{{ m.img('images/musik/honigbiene/honigbiene2.jpg', 'Das Summen der Honigbiene 2') }}<figcaption>Das Summen der Honigbiene 2 | Farbradierung</figcaption></figure>
+      <figure>{{ m.img('images/musik/honigbiene/kuckuckshummel.jpg', 'Kuckuckshummel in Balzstimmung') }}<figcaption>Kuckuckshummel in Balzstimmung</figcaption></figure>
+      <figure>{{ m.img('images/musik/honigbiene/bienen-label.jpg', 'CD-Label Das Summen der Honigbiene by Teflon Fonfara') }}<figcaption>Das CD-Label</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Die Werkstatt</h2><p>Wie aus Bienenmusik ein Bild wird.</p></div>
+    <div class="grid grid--3">
+      <figure class="card mt-0" style="margin:0">{{ m.img('images/musik/honigbiene/roland-1.jpg', 'Roland Bentz in der Radierwerkstatt', 'inline-img') }}
+        <figcaption class="mt-1">In der Radierwerkstatt tönt aus dem Lautsprecher „the honey bee’s buzz“ von Teflon Fonfara. Bentz hebt vorsichtig die mit Asphaltstaub belegte Kupferplatte auf den Lautsprecher. Durch die rhythmischen Vibrationen der Bienenmusik zeigt sich auf der Druckplatte ein Vibrationsmuster, das beim nächsten Arbeitsschritt auf die Kupferplatte aufgeschmolzen wird. Das festgebrannte Muster lässt sich nach dem Ätzvorgang, in traditioneller Aquatinta Manier im Tiefdruck abdrucken. Das Summen der Honigbiene wurde bei dieser Vorgehensweise in eine druckbare Bildform transformiert.</figcaption></figure>
+      <figure class="card" style="margin:0">{{ m.img('images/musik/honigbiene/roland-2.jpg', 'Vorbereiten der Druckplatte', 'inline-img') }}
+        <figcaption class="mt-1">Erste Schritte beim Vorbereiten der Druckplatte. Die Kupferplatte wird an der Schwappel auf Hochglanz poliert. Der rhythmisierte bewegte Asphaltstaub soll auf dem Kupfer in seiner Bewegung völlig frei sein um ein einwandfreies grafisches Bild zu erhalten.</figcaption></figure>
+      <figure class="card" style="margin:0">{{ m.img('images/musik/honigbiene/roland-3.jpg', 'Aufpudern des Asphaltstaubs', 'inline-img') }}
+        <figcaption class="mt-1">Die polierte Kupferplatte kommt auf dem Lautsprecher zum Liegen und der Asphaltstaub wird aufgepudert. Um beim Aufstäuben eine gleichmäßige Puderschicht zu erreichen, ist über das Glas mit dem Staub, eine feine Gaze gespannt.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sun">
+  <div class="wrap">
+    <p class="eyebrow" style="color:inherit">Kontakt</p>
+    <div class="grid grid--2">
+      <div class="tile" style="grid-template-columns:110px 1fr">
+        <div class="tile__img" style="width:110px">{{ m.img('images/musik/honigbiene/roland.jpg', 'Roland Bentz') }}</div>
+        <div><h3>Roland Bentz</h3><p><a href="http://www.roland-bentz.de/" target="_blank" rel="noopener">www.roland-bentz.de</a><br><a href="mailto:roland.bentz@t-online.de?subject=Das%20Summen%20der%20Honigbiene">roland.bentz@t-online.de</a></p></div>
+      </div>
+      <div class="tile" style="grid-template-columns:110px 1fr">
+        <div class="tile__img" style="width:110px">{{ m.img('images/musik/honigbiene/tef.jpg', 'Teflon Fonfara') }}</div>
+        <div><h3>Teflon Fonfara</h3><p><a href="{{ root }}index.html">www.fonfara.de</a><br><a href="mailto:teflon@fonfara.de?subject=Das%20Summen%20der%20Honigbiene">teflon@fonfara.de</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,69 @@
+{# ---------------------------------------------------------------------- #}
+{#  Wiederverwendbare Bausteine                                            #}
+{# ---------------------------------------------------------------------- #}
+
+{% macro img(path, alt, cls="", loading="lazy", style="") -%}
+{%- set w, h = dims(path) -%}
+<img src="{{ root }}{{ path }}" alt="{{ alt }}" width="{{ w }}" height="{{ h }}"{% if cls %} class="{{ cls }}"{% endif %}{% if style %} style="{{ style }}"{% endif %} loading="{{ loading }}" decoding="async">
+{%- endmacro %}
+
+{% macro polaroid(path, caption="", alt="", cls="") -%}
+<figure class="polaroid {{ cls }}">{{ img(path, alt or caption) }}{% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}</figure>
+{%- endmacro %}
+
+{% macro play_icon() -%}
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>
+{%- endmacro %}
+
+{# Video-Karte: lädt YouTube erst nach Klick #}
+{% macro video(id, title, poster=None, kicker=None, text=None, anchor=None, wide=False) -%}
+<article class="video{% if wide %} video--wide{% endif %}"{% if anchor %} id="{{ anchor }}"{% endif %}>
+  <button class="video__play" type="button" data-yt="{{ id }}" data-title="{{ title|striptags|e }}" aria-label="Video abspielen: {{ title|striptags|e }}">
+    {% if poster %}
+    {% set w, h = dims(poster) %}
+    <span class="video__bg" style="background-image:url('{{ root }}{{ poster }}')" aria-hidden="true"></span>
+    <img class="fit" src="{{ root }}{{ poster }}" alt="" width="{{ w }}" height="{{ h }}" loading="lazy" decoding="async">
+    {% else %}
+    <span class="video__placeholder" aria-hidden="true">{{ title }}</span>
+    {% endif %}
+    <span class="video__btn">{{ play_icon() }}</span>
+  </button>
+  <div class="video__body">
+    {% if kicker %}<span class="video__kicker">{{ kicker }}</span>{% endif %}
+    <h3 class="video__title">{{ title }}</h3>
+    {% if text %}<div class="video__text">{{ text }}</div>{% endif %}
+  </div>
+</article>
+{%- endmacro %}
+
+{% macro yt_link(id, label, title="") -%}
+<a href="https://www.youtube.com/watch?v={{ id }}" data-yt="{{ id }}" data-title="{{ (title or label)|striptags|e }}">{{ label }}</a>
+{%- endmacro %}
+
+{% macro privacy_note() -%}
+<p class="embed-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+<span>Videos werden erst beim Klick auf „Abspielen“ von YouTube (youtube-nocookie.com) geladen. Dabei werden Daten an YouTube übertragen – siehe <a href="{{ root }}impressum.html#datenschutz">Datenschutz</a>.</span></p>
+{%- endmacro %}
+
+{# Externe Player (SoundCloud, instantlicensing …) erst nach Klick laden #}
+{% macro lazy_embed(src, title, height="166", label="Player laden", provider="", link=None) -%}
+<div class="lazy-embed">
+  <strong>{{ title }}</strong>
+  <button class="btn btn--sm" type="button" data-embed="{{ src }}" data-height="{{ height }}" data-title="{{ title|e }}">
+    {{ play_icon() }} {{ label }}
+  </button>
+  <span class="small">Lädt einen externen Player{% if provider %} von {{ provider }}{% endif %}.{% if link %} Oder direkt: <a href="{{ link }}" target="_blank" rel="noopener">{{ link|replace('https://','')|replace('http://','')|truncate(48, True, '…') }}</a>{% endif %}</span>
+</div>
+{%- endmacro %}
+
+{% macro ext(href, label) -%}
+<a href="{{ href }}" target="_blank" rel="noopener">{{ label }}</a>
+{%- endmacro %}
+
+{% macro page_hero(eyebrow, heading, lead=None) -%}
+<section class="wrap page-hero">
+  <p class="eyebrow">{{ eyebrow }}</p>
+  <h1>{{ heading }}</h1>
+  {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+</section>
+{%- endmacro %}

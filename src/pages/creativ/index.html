@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Internet-Videos</p>
+    <h1>Comedy &amp; Werbung – die attraktive Mischung.</h1>
+    <p class="lead">Humor in der Werbung ist der Schlüssel für zeitgemäßes Advertising Entertainment.</p>
+    <p class="muted">Teflon Fonfara · Telefon <a href="tel:+497116405308">0711 – 640 53 08</a> · <a href="mailto:teflon@fonfara.de">teflon@fonfara.de</a></p>
+  </div>
+  <div class="page-hero__art" style="max-width:520px">{{ m.video('NrUb_X5z_4s', 'Trailer: Darf Werbung Spaß machen?', None, 'Trailer') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap split split--center">
+    <div class="prose">
+      <h2>Videos für Facebook &amp; Co</h2>
+      <p>Lassen Sie sich vom Stuttgarter Künstler Teflon Fonfara ein kreatives Video gestalten. Für die lebendige Unterhaltung im Web.</p>
+      <h3>Ihre Firma in der Öffentlichkeit.</h3>
+      <p>Wir entwickeln die Idee, erstellen das Konzept und produzieren beste werbliche Unterhaltung, witzig, zeitgemäß und bei einer hohen Aufmerksamkeits-Quote. Ihre Kunden werden ihren Spaß haben in Facebook, Instagram, Twitter &amp; Co.</p>
+      <p><strong>Auch Komplett-Betreuung:</strong> Marketing für ein Warenprodukt oder komplettes Erscheinungsbild in Bild, Ton und Print auf Anfrage.</p>
+      <p>Kontaktieren Sie uns und wir sprechen darüber.</p>
+      <div class="btn-row"><a class="btn" href="mailto:teflon@fonfara.de">Kontakt aufnehmen</a><a class="btn btn--ghost" href="{{ root }}creativ/werkbeispiel.html">Werkbeispiel ansehen</a></div>
+    </div>
+    <div class="card tile" style="grid-template-columns:140px 1fr">
+      <div class="tile__img" style="width:140px">{{ m.img('creativ/images/tef2.jpg', 'Ihr Werbepartner Teflon Fonfara') }}</div>
+      <div>
+        <h3>Teflon Fonfara</h3>
+        <p>Partner für Werbe-Ideen. Autor, Grafiker, Video-Macher.</p>
+        <p class="muted mb-0">Autor von über 1000 Comedy-Folgen in SDR/SWF/SWR.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Beispiele</h2></div>
+    <div class="video-grid">
+      {{ m.video('OXLT2qjzv_M', '„Kultkneipe Karmeliter“', None, 'Beispiel') }}
+      {{ m.video('5FzBQgFSPwo', '„Der neue Bahnhof isch fertig“', 'images/filmbilder/bahnhofstrailer.jpg', 'Beispiel') }}
+      {{ m.video('xX2BZ5u0hxs', '„The Länd. The Song“', 'images/filmbilder/titel-laend.jpg', 'Beispiel', 'Comedy zur Image-Kampagne.') }}
+      {{ m.video('vyRZHEMThPI', '„Fleischsalat in Comedy“', 'images/filmbilder/hengstenberg2.jpg', 'Beispiel') }}
+      {{ m.video('BdHOgel_CiI', '„Krabbelschuhe“', None, 'Beispiel') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+{% endblock %}

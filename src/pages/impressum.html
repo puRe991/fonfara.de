@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('Kontakt · Rechtliches', 'Impressum & Datenschutz') }}
+
+<section class="section--tight">
+  <div class="wrap split">
+    <div class="card">
+      <h2 style="font-size:1.6rem">Kontakt</h2>
+      <address style="font-style:normal" class="lead">
+        Teflon Fonfara<br>
+        Filderstr. 19, 70180 Stuttgart<br>
+        Telefon <a href="tel:+497116405308">0711 – 640 53 08</a><br>
+        Mail: <a href="mailto:teflon@fonfara.de">Teflon@Fonfara.de</a><br>
+        Homepage <a href="{{ root }}index.html">www.fonfara.de</a>
+      </address>
+      <dl class="meta-list">
+        <dt>USt-IdNr.</dt><dd>DE147451965</dd>
+        <dt>Verantwortlich für den Inhalt</dt><dd>Teflon Fonfara</dd>
+      </dl>
+      <p class="small">Für Inhalte von fremden Links kann trotz sorgfältiger Überprüfung keine Verantwortung übernommen werden.</p>
+      <p class="small mb-0"><strong>Fotos:</strong> Ulrike von Gemmingen, Sybille Schlumberger, Catrin Cohnen-Deliga, Renate Stürmer u. v. m.</p>
+    </div>
+    <div class="callout callout--soft">
+      <h3>Schnell gefunden</h3>
+      <ul class="clean stack">
+        <li><a class="link-arrow" href="#disclaimer">Disclaimer / Haftungsausschluss</a></li>
+        <li><a class="link-arrow" href="#datenschutz">Datenschutzerklärung</a></li>
+        <li><a class="link-arrow" href="{{ root }}kp/impressum.html">Impressum Frau Kächele &amp; Frau Peters</a></li>
+        <li><a class="link-arrow" href="{{ root }}creativ/impressum.html">Impressum Kreatives</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="disclaimer">
+  <div class="wrap wrap--narrow prose">
+    <h2>Disclaimer / Haftungsausschluss</h2>
+    <h3>Internet Disclaimer / Haftungsausschluss</h3>
+    <p>TEFLON® ist eine eingetragene Marke von E. I. du Pont de Nemours and Company (DuPont) für Fluorharze und Beschichtungsanwendungen, inbegriffen aber nicht begrenzt auf Fluoropolymere, Fluorochemikalien, Filme, Oberflächen- und Gewebeschutzmittel.</p>
+    <p><strong>Disclaimer:</strong> Die Verwendung von „Teflon“ als Künstlername von Herrn Fonfara wurde von DuPont nicht genehmigt und DuPont steht in keinerlei Verbindung zu Herrn Fonfara oder dessen künstlerischen oder geschäftlichen Aktivitäten.</p>
+    <p>Wir weisen darauf hin, daß sich diese Homepage und sämtliche Informationen auf der Homepage nach deutschem Recht richtet. Jeder Benutzer, welcher über diesen Disclaimer hinweggeht, um auf unseren einzelnen Seiten Zugriff zu nehmen, erkennt mit dem Weiterblättern der Seite an, daß sich die Beziehung zwischen ihm und uns ausschließlich nach deutschem Recht richtet. Vorsorglich weisen wir darauf hin, daß die von uns abgegebenen Informationen auf der Homepage nicht genutzt werden können, um Krankheiten oder Leiden selbst zu erkennen und therapieren. Für die Vollständigkeit oder Richtigkeit der Informationen auf dieser Homepage können wir keine Garantie übernehmen. Wir können nicht ausschließen, daß unsere Internetseiten auch Informationen durch Dritte aufweisen. Für diese Informationen können wir keine Haftung übernehmen.</p>
+    <p>Sämtliche Texte und Grafiken auf unseren Homepages sind urheberrechtlich oder durch sonstige Schutzrechte geschützt. Der Gebrauch oder die Vervielfältigung dieser Grafiken und Texte ist ohne die vorherige schriftliche Genehmigung durch uns nicht gestattet. Insbesondere werden wir es nicht gestatten, daß Produktbezeichnungen, welche grundsätzlich Markenschutz genießen, von Dritten gebraucht werden. Um die Internetseite aktuell halten zu können, werden wir selbstverständlich die Texte gegebenenfalls ändern und/oder ergänzen. Eine Haftung aus dem Inhalt der Internetseiten ergibt sich nicht.</p>
+    <p>Dieses Impressum gilt auch für die Facebookseite <a href="https://www.facebook.com/pages/ASIAN-STARS/135810076312">https://www.facebook.com/pages/ASIAN-STARS/135810076312</a><br>
+    Dieses Impressum gilt auch für die Facebookseite <a href="https://www.facebook.com/teflon.fonfara">https://www.facebook.com/teflon.fonfara</a><br>
+    Dieses Impressum gilt auch für die Twitter-Seite <a href="https://twitter.com/siriusengel">https://twitter.com/siriusengel</a><br>
+    Dieses Impressum gilt auch für die Google-Plus-Seite https://plus.google.com/109439768258433229711<br>
+    Dieses Impressum gilt auch für die Blogger-Seite <a href="http://www.blogger.com/profile/00432227668187287537">http://www.blogger.com/profile/00432227668187287537</a><br>
+    Dieses Impressum gilt auch für die Autorenseite und allen Neben- und Unterseiten in Jimdo unter <a href="http://teflonfonfara.jimdo.com/%C3%BCber-mich/">http://teflonfonfara.jimdo.com/über-mich/</a><br>
+    Dieses Impressum gilt auch für die YouTube-Seite youtube.com/lichtstar</p>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="datenschutz">
+  <span id="da" class="anchor-offset"></span>
+  <div class="wrap wrap--narrow prose">
+    {{ fragment('datenschutz.html') }}
+  </div>
+</section>
+{% endblock %}

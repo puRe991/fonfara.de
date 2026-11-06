@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('Kreatives', 'Impressum') }}
+<section class="section--tight">
+  <div class="wrap wrap--narrow prose">
+    <h2>Internet Disclaimer / Haftungsausschluss</h2>
+    <p>TEFLON® ist eine eingetragene Marke von E. I. du Pont de Nemours and Company (DuPont) für Fluorharze und Beschichtungsanwendungen, inbegriffen aber nicht begrenzt auf Fluoropolymere, Fluorochemikalien, Filme, Oberflächen- und Gewebeschutzmittel.</p>
+    <p><strong>Disclaimer:</strong> Die Verwendung von „Teflon“ als Künstlername von Herrn Fonfara wurde von DuPont nicht genehmigt und DuPont steht in keinerlei Verbindung zu Herrn Fonfara oder dessen künstlerischen oder geschäftlichen Aktivitäten.</p>
+    <p>Sämtliche Texte und Grafiken auf unseren Homepages sind urheberrechtlich oder durch sonstige Schutzrechte geschützt. Der Gebrauch oder die Vervielfältigung dieser Grafiken und Texte ist ohne die vorherige schriftliche Genehmigung nicht gestattet.</p>
+    <h2>Kontakt</h2>
+    <p>Teflon Fonfara<br>Filderstr. 19, 70180 Stuttgart<br>Telefon <a href="tel:+497116405308">0711 – 640 53 08</a><br>Mail: <a href="mailto:teflon@fonfara.de">Teflon@Fonfara.de</a><br><a href="{{ root }}creativ/index.html">www.fonfara.de/creativ</a></p>
+    <p>USt-IdNr.: DE147451965<br>Verantwortlich für den Inhalt: Teflon Fonfara<br>Für Inhalte von fremden Links kann trotz sorgfältiger Überprüfung keine Verantwortung übernommen werden.</p>
+    <p><a class="btn btn--ghost" href="{{ root }}impressum.html#datenschutz">Datenschutzerklärung</a></p>
+  </div>
+</section>
+{% endblock %}

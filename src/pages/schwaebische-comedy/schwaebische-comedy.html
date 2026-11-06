@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set recipes = load_json('recipes.json') %}
+{% set picks = [1,2,3,4,5,6,7,8,9,10,11,21,22] %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Der andere Humor</p>
+    <h1>Die schwäbische Seite</h1>
+    <div class="chips mt-1">
+      <a href="#humor">Der andere schwäbische Humor</a>
+      <a href="#kaechele">Die Kächele-Comedy-Dynastie</a>
+      <a href="#bahnhof">Aktuell: Der neue Bahnhof isch fertig</a>
+      <a href="#schwaebisch">Schwäbisch im Tempo-Experiment</a>
+      <a href="#eberhard">Darf Mundart polarisieren?</a>
+      <a href="#rezepte">Hefezopf-Rezepte</a>
+    </div>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('images/kp/pics/kp-show_mundelsheim-2.jpg', 'Frau Kächele & Frau Peters live', '', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight anchor-offset" id="humor">
+  <div class="wrap wrap--narrow prose">
+    <h2>Der andere schwäbische Humor</h2>
+    <p>Der schwäbische Humor ist vielschichtig, manche meinen, schwäbischer Humor sieht klassisch so aus: Ein Ehepaar sitzt auf der Bühne und bäfft sich an. Das Publikum lacht, die Performance ist perfekt. Doch spätestens seit Sebastian Blau (Josef Eberle) und Thaddäus Troll wissen wir, dass schwäbischer Humor sehr viel weiter reicht und darf auch für so manchen Landstrich spezifisch sein. Humor wird unterschiedlich aufgefasst, aalglatter gemütlicher Schwabenwitz findet im Ländlichen immer ein Publikum, doch mit einer fremdartigen Performance, neuartig, einfallsreich und immer noch schwäbisch geprägt, tut sich der Stadt-Comedian im Ländlichen eher schwer. In allen Genres gibt es Außenseiter, der schwäbische Humor lässt dies nur bedingt zu.</p>
+    <p>Das Duo Häberle &amp; Pfleiderer brillierte auf Stuttgarter Bühnen und nach dem Kriegsende besonders durch zahlreiche Auftritte in Hörfunk und Fernsehen beim SDR. Sketche wurden auf den Punkt gebracht und gingen als die unumstößlichen Maßstäbe der schwäbischen Unterhaltung hervor. Der markante ehrliche schwäbische Witz des Duos, ursprünglich geprägt durch Auftritte in den frühen 1930er Jahren, behielt immer noch seine Gültigkeit, unterstützt vom aufkommenden Medium Fernsehen.</p>
+    <p>Der Süddeutsche Rundfunk produzierte mit dem Duo – ausgestattet im damals üblichen Zeitgeist – beste Unterhaltung, die Bühnendarstellung war reduziert auf ein Minimum und die realistischen schwäbischen Themen konnte jeder leicht nachvollziehen. Der Wortwitz bestimmte die Handlung und es war aalglattes Fernsehen. Dies entsprach der damaligen „Deutschen Rundfunknorm“.</p>
+    <p>Dies änderte sich spätestens 1986 mit einem schwäbischen Comedian-Duo, das sich nicht an diese Rundfunknorm hielt.</p>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="kaechele">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>Die Kächele-Comedy-Dynastie</h2>
+      <p>Teflon Fonfara, ein „schwäbischer Außenseiter“, definierte schwäbischen Humor neu und erfand für den SDR3 die langjährige Comedy-Serie „Frau Kächele &amp; Frau Peters“. Jetzt war alles anders, die Geschichten waren vollkommen unrealistisch, aber voller Fantasie und erfinderischem, schwäbischen Ideenreichtum, die Klänge und Hörspiel-Geräusche wurden tontechnisch designed, der Unterhaltungspegel immer hoch, und alles mit Tempo: Akustische Comics in schwäbisch (Hörfunk). Teflon Fonfara spielte alle Figuren selbst.</p>
+      <p>Da es noch wenige Sender nur gab, erreichte die Kultserie eine riesige Hörergruppe im Sendegebiet, und Frau Kächele &amp; Frau Peters wurden zum Markenzeichen des „Wilden Südens“.</p>
+      <p>TV-Beiträge aber entstanden im realistischen Umfeld des Studios, auch weil sich die Traumbauten aus den wilden Geschichten nicht herstellen ließen.</p>
+      <p>Die Serie endete 1998 nach 12 Jahren Laufzeit und über 800 Folgen mit der Schließung des Süddeutschen Rundfunks durch die Fusion SDR mit SWF, heute SWR.</p>
+      <p>Der Name „Kächele“ jedoch behielt seine Wirkung. Andere Komödien-Gruppen nutzen den Namen für ihre Kleinkunstauftritte und für Youtube-Videos, auch ein Lebensmittelhersteller wurde sich der Werbewirksamkeit dieses Begriffes bewusst.</p>
+      <p>Frau Kächele &amp; Frau Peters veröffentlichten <a href="{{ root }}kp/cd.html#cds">CDs</a> und <a href="{{ root }}kp/cd.html#cds">Vinyl</a>, sowie <a href="{{ root }}kp/cd.html#buch">Bücher</a>.</p>
+    </div>
+    <div class="stack">
+      {{ m.video('3jqO8ji850s', 'Frau Kächele & Frau Peters, SDR', 'images/filmbilder/kp.jpg', 'Video') }}
+      <div class="card">
+        <p class="eyebrow">Aktuelles Hörbeispiel (2 Min.)</p>
+        <h3>Die Internetstanze</h3>
+        <audio controls preload="none" src="{{ root }}kp/internetstanze_Frau_Kaechele_Frau_Peters.mp3" style="width:100%"></audio>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="bahnhof">
+  <div class="wrap feature">
+    <div class="cover-wrap"><a href="{{ root }}kp/cd.html">{{ m.img('images/kp/pics/bahnhof-mini.jpg', 'Buchtitel Der neue Bahnhof isch fertig', 'cover') }}</a></div>
+    <div>
+      <p class="eyebrow">Aktuell</p>
+      <h2>Der neue Bahnhof isch fertig.</h2>
+      <p class="lead">Das große Stuttgart 21-Abenteuer. Die Satire zu einer Jahrhundertgeschichte.</p>
+      <p>Frau Kächele &amp; Frau Peters erleben unfassbare Abenteuer im neuen Stuttgarter Bahnhof. Ein surreales Vergnügen voller aberwitziger Einfälle.</p>
+      <dl class="meta-list">
+        <dt>Hörspiel</dt><dd>92 Min., Euro 5,99, bei <a href="https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064" target="_blank" rel="noopener">HöBu</a></dd>
+        <dt>Buch</dt><dd>112 Seiten, 13 Illustrationen, € 12,99 bei <a href="https://verlagshaus24.de/der-neue-bahnhof-isch-fertig" target="_blank" rel="noopener">Silberburg Verlag</a></dd>
+      </dl>
+      <a class="link-arrow" href="{{ root }}kp/cd.html">Mehr Info</a>
+    </div>
+  </div>
+  <div class="wrap mt-3">
+    <p>Teflon Fonfara ging in den Folgejahren als „Frau Kächele &amp; Frau Peters“ auf die Bühne mit einer Solo-Show oder mit der Bühnenpartnerin Babs Steinbock.</p>
+    <div class="video-grid">
+      {{ m.video('t7FxfVdrg_0', 'Solo-Performance live (2007)', 'images/filmbilder/dr-schiwago.jpg', 'Video 2007') }}
+      {{ m.video('ESiMxcSs_z0', 'SWR Fernsehen Landesschau', 'images/filmbilder/swr-4.jpg', 'TV') }}
+      {{ m.video('T22yezRVaKw', 'Schwäbische Popsong-Comedy', 'images/filmbilder/kp-brieftraeger-37.jpg', 'Babs Steinbock, Teflon Fonfara') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sun anchor-offset" id="schwaebisch">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2>Schwäbisch im Tempo-Experiment</h2>
+        <p>Die schwäbische Mundart ist sparsam und im Timing gemütlich, und es gibt oft eine gewisse Zeitspanne, bis das Gespräch überhaupt beginnt. Aber vielleicht war das nur früher so? Und vielleicht ist dies in der Stadt sowieso ganz anders?</p>
+        <p>Dazu haben wir ein Experiment gestartet. Wir produzierten mehrere neue Video-Folgen mit Frau Kächele &amp; Frau Peters in anderer Gestaltung. Der Dialog erfolgte in schnellem Tempo, den Rest machte die Bildbearbeitung. Und weil Teflon Fonfara beide Figuren zu Hause vor der Wand selbst spielte, gab es entsprechend viele Bildschnitte. Es entstanden skurrile, kurze schnelle Folgen, vielleicht angelehnt an den modernen Groove eines MTV-Beitrags.</p>
+        <p>Wir wollten herausfinden, wie weit lässt sich die Performance beschleunigen, hält das der schwäbische Dialekt aus? Lässt sich Schwäbisch im untypisch hohen Tempo überhaupt noch definieren? Oder bleibt der schwäbische Witz auf der Strecke? Wie weit kann man gehen und wo ist die Grenze? Verzichtet wurde ebenso auf Sprechpausen oder auf das besondere Comedy-Timing. Es entstand schwäbischer Fließband-Humor im Schnelldurchgang. Soweit das Experiment.</p>
+      </div>
+      <div>
+        <h3>Das Ergebnis</h3>
+        <p>Nach unserer Befragung war die Erkenntnis folgende: Ältere Schwaben konnten mit diesen schnelleren schwäbischen Szenen nicht immer etwas anfangen, oft fehlte es an der Verständlichkeit einzelner Worte, oder sie konnten nicht die Story erfassen. Witzig empfand man meist die immer gleich gespielte Schlussszene, ein für Ältere wirksamer Wiederholungseffekt. Ansonsten hieß es: Die Sketche waren nicht so gemütlich wie sonst schwäbische Comedy gespielt wird, man muss sehr aufmerksam sein oder es ist zu anstrengend.</p>
+        <p>Dagegen vollkommen anders reagiert die jüngere Generation. Junge Leute sind es sehr wohl gewohnt, schnelle Texte und Bildschnitte in höherem Tempo zu erfassen, denn ein flottes Timing gehört zum üblichen Ausdruck in den modernen digitalen Medien. Damit kann diese Generation sehr gut umgehen. Der schwäbische Ausdruck konnte im Test gut verstanden und als sehr witzig empfunden werden, wenn auch als eine unnatürliche aber unterhaltsame Mundart-Performance.</p>
+        <blockquote style="border-color:#1b1714">Schwäbisch als digitaler Burner für eine junge Zielgruppe?</blockquote>
+      </div>
+    </div>
+    <h3 class="mt-2">Beispiele</h3>
+    <div class="video-grid">
+      {{ m.video('8tVdLoCEU78', 'Gravitation – Frau Kächele & Frau Peters', None, 'Tempo-Experiment') }}
+      {{ m.video('DAT66b_xzXs', 'Pferde – Frau Kächele & Frau Peters', None, 'Tempo-Experiment') }}
+      {{ m.video('63EXpsmm8yw', 'Glückskeks', None, 'Tempo-Experiment') }}
+    </div>
+    <p class="mt-2"><a class="btn" href="https://www.youtube.com/playlist?list=PLv40s9i9255R0ceFU9LKk-mLM-wZgLiW2" target="_blank" rel="noopener">Hier weitere Videos zum Experiment</a></p>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="eberhard">
+  <div class="wrap">
+    <div class="split mb-2">
+      <h2>Darf Mundart polarisieren?</h2>
+      <div>
+        <p>Während der Corona-Pause wurde in Homemade und mit Standbild-Kamera aus der Kächele-Dynastie die Figur <strong>Eberhard Kächele</strong> aktiviert und es entstanden neue Schwabenlieder, ehrlich, witzig, schräg und unkonventionell, hergestellt zuhause im Alleingang.</p>
+        <p>Eberhard Kächele ist ein polarisierender Außenseiter und hat es mutig gewagt, das heiligste Lied aller schwäbischen Lieder anzurühren, er definierte die „Schwäbische Eisenbahn“ neu.</p>
+        <p>Weiter widmete er dem traditionellen Schwarzwälder Bollenhut eine Punk-Variante, singt über vegane Kutteln und Stuttgart wird zur Herzensstadt.</p>
+        <p><strong>Standard-Comedy oder polarisierende schwäbische Satire? Und: Wie albern darf Mundart sein?</strong></p>
+      </div>
+    </div>
+    <div class="video-grid">
+      {{ m.video('rhWyDU3eiWs', '„Die schwäbische Eisebahn isch a Sach“', 'images/filmbilder/eisenbahn.jpg', 'Eberhard Kächele') }}
+      {{ m.video('k-ZC6tbjFhY', '„Heiko mit dem Bollenhut“', 'images/filmbilder/bollenhut.jpg', 'Eberhard Kächele') }}
+      {{ m.video('u6NDENYIpwg', '„Vegane Kuttla“', 'images/filmbilder/titel-vegan.jpg', 'Eberhard Kächele') }}
+      {{ m.video('YbojXEnQ0IM', '„Stuttgart isch mei Herzensstadt“', 'images/filmbilder/stuttgart-herzensstadt.jpg', 'Eberhard Kächele') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap grid grid--2">
+    <div>
+      <h3>Weiterführende Links</h3>
+      <ul class="clean stack">
+        <li><a class="link-arrow" href="{{ root }}kp/index.html">Webseite Frau Kächele &amp; Frau Peters</a></li>
+        <li><a class="link-arrow" href="{{ root }}index.html">Webseite Teflon Fonfara</a></li>
+        <li><a class="link-arrow" href="https://www.mund-art.de/" target="_blank" rel="noopener">Mundartverein</a></li>
+        <li><a class="link-arrow" href="https://www.mundartradio.de/" target="_blank" rel="noopener">Mundartradio</a></li>
+        <li><a class="link-arrow" href="{{ root }}kp/impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+    <div>
+      {{ m.video('5FzBQgFSPwo', 'Der neue Bahnhof isch fertig – Trailer', 'images/filmbilder/bahnhofstrailer.jpg', 'Hörspiel', 'Hörspiel erhältlich bei <a href="https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064" target="_blank" rel="noopener">HöBu</a>, Euro 5,99.') }}
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="rezepte">
+  <div class="wrap wrap--narrow">
+    <div class="section-head"><h2>Hefezopf-Rezepte</h2><a class="link-arrow" href="{{ root }}kp/hefezopfrezept.html">Weitere Hefezopf-Rezepte</a></div>
+    <div class="faq">
+      {% for r in recipes if r.no in picks %}
+      <details>
+        <summary>{{ r.title }}</summary>
+        <div class="faq__body recipe" style="border:0;padding:0">
+          <ul>{% for i in r.ingredients %}{% if i not in ['Zutaten', 'Zutaten:'] %}<li{% if i.endswith(':') %} class="sub"{% endif %}>{{ i }}</li>{% endif %}{% endfor %}</ul>
+          <div>{% for s in r.steps %}<p>{{ s }}</p>{% endfor %}</div>
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set HOEBU = 'https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064' %}
+{% block content %}
+{{ m.page_hero('Bücher & Hörspiel', 'Bücher von Teflon Fonfara', 'Romane, Satire, Spirituelles, Lyrik und schwäbische Comedy – vom Hefezopf-Textbuch bis zum spirituellen Abenteuer-Roman.') }}
+
+<nav class="wrap" aria-label="Bücher">
+  <div class="chips">
+    <a href="#liebe">Liebe in magischen Zeiten</a>
+    <a href="#bahnhof">Der neue Bahnhof isch fertig</a>
+    <a href="#transformation">Die Kraft der spirituellen Transformation</a>
+    <a href="#reli">RELI – aus gutem Grund</a>
+    <a href="#gitarren">Die Gitarren-Verschwörung</a>
+    <a href="#lyrik">Lyrik, Witz &amp; Wahrheit</a>
+    <a href="#hefezopfpower">Hefezopf-Power</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <article class="book anchor-offset" id="liebe">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/liebe-in-magischen-Zeiten-2.jpg', 'Liebe in magischen Zeiten', 'cover', 'eager') }}<div class="sticker"><span><b>Neu!</b></span></div></div>
+      <a class="btn" href="https://www.thalia.de/shop/home/artikeldetails/A1063610988" target="_blank" rel="noopener">Bestellen</a>
+    </div>
+    <div>
+      <p class="eyebrow">Liebesroman · Abenteuer · Humor · Fantasie</p>
+      <h2>LIEBE IN MAGISCHEN ZEITEN</h2>
+      <p class="sub">Abenteuer, Fußball und die andere Realität. Von Teflon Fonfara</p>
+      <p>Eine tiefe Liebe verbindet Martina und ihr neuer Freund. Martina entdeckt, dass er über besondere Fähigkeiten verfügt und das komplette Leben der beiden verändert. Sie wird seine Managerin und organisiert eine ungeahnte Karriere für den Mann mit dem außergewöhnlichen Talent. Mit metaphysischen Aktionen rettet er Menschenleben, holt sich den Hauptgewinn in einer TV-Sendung und möchte den Zwergstaat Andorra zum Fußballweltmeister machen.</p>
+      <p>Doch er hat auch Feinde, Wissenschaftler meinen, er verstößt gegen die Naturgesetze der Physik. Er wird bedroht und Freundin Martina wird entführt. Eine Loge tritt in sein Leben und möchte ihm helfen. Ein alter Plan führt nach Ibiza. Es ist die Ankunft der „Heiligen Kinder“.</p>
+      <p><strong>Ein spiritueller Abenteuer-Roman.</strong></p>
+      <dl class="meta-list">
+        <dt>Verlag</dt><dd>Spirit Rainbow Verlag</dd>
+        <dt>Preis</dt><dd>17 Euro</dd>
+        <dt>ISBN-10</dt><dd>3-948108-61-7</dd>
+        <dt>ISBN-13</dt><dd>978-3-948108-61-8</dd>
+      </dl>
+      <p><a href="https://www.facebook.com/Liebe-in-magischen-Zeiten-116054457752297/?ref=page_internal" target="_blank" rel="noopener"><strong>Bist du schon in der Facebook-Community?</strong></a> Hier kannst du inhaltliche Fragen zum Buch stellen.</p>
+      <div style="max-width:520px">{{ m.video('gvo1X5H7AJo', 'Video-Trailer zum Buch', None, 'Trailer') }}</div>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="bahnhof">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/der-neue-bahnhof-isch-fertig.jpg', 'Der neue Bahnhof isch fertig', 'cover') }}</div>
+    </div>
+    <div>
+      <p class="eyebrow">SDR-Kult-Comedy · Erhältlich als Hörspiel und als Buch</p>
+      <h2>Der neue Bahnhof isch fertig</h2>
+      <p class="sub">Frau Kächele &amp; Frau Peters</p>
+      <p>Die Kultweiber Frau Kächele &amp; Frau Peters aus dem Wilden Süden besichtigen den neuen Stuttgarter Bahnhof und erleben dort unfassbare Abenteuer. Endlich kommt hier eine Jahrhundert-Story über die wirklich skurrilen Geschichten von Stuttgart 21.</p>
+      <p>Frau Kächele &amp; Frau Peters, die Hefezopf liebenden Kultfiguren, erleben unfassbare Abenteuer im neuen Stuttgarter Bahnhof. Gleich zu Anfang müssen sie ein »Hopftraining« absolvieren, um auf den schräg angelegten Bahnsteigen den ständig vorbeirollenden Koffern und Kinderwägen aus dem Weg springen zu können.</p>
+      <p>Statt Zug zu fahren – laufend fallen welche aus oder kommen zu spät –, besichtigen sie den zum Eventtempel mutierten Bahnhof. Wegen eines Wassereinbruchs fahren sie schließlich statt mit der Bahn im Tretboot durch die Tunnel nach Ulm. Doch dann biegen sie falsch ab, stürzen einen Wasserfall hinab und landen in der Neckarschleuse neben einem Kreuzfahrtschiff. Als sie erfahren, dass im ICE Waschmaschinen stehen, in denen Schwarzgeld gewaschen wird, machen sich die Damen mit detektivischem Gespür daran, die dunklen Machenschaften aufzudecken …</p>
+      <p>Ein surreales Vergnügen voller aberwitziger Einfälle. Von Teflon Fonfara. Weiter zu <a href="{{ root }}kp/cd.html">Frau Kächele &amp; Frau Peters</a>.</p>
+      <div class="grid grid--2 mt-2">
+        <div class="card">
+          <div class="tile" style="grid-template-columns:80px 1fr"><a href="{{ HOEBU }}" target="_blank" rel="noopener">{{ m.img('images/buch/bahnhof-1.jpg', 'Hörspiel-Cover', 'inline-img') }}</a>
+          <div><h3>Das Hörspiel</h3><p class="muted mb-0">92 Minuten Ekstase &amp; Hefezopf!</p></div></div>
+          <p class="mt-1"><a href="{{ HOEBU }}" target="_blank" rel="noopener">Download</a> nur 5,99 € bei <a href="{{ HOEBU }}" target="_blank" rel="noopener">HöBu</a>.</p>
+          {{ m.video('5FzBQgFSPwo', 'Video zum Hörspiel', 'images/filmbilder/bahnhofstrailer.jpg') }}
+        </div>
+        <div class="card">
+          <div class="tile" style="grid-template-columns:80px 1fr"><a href="https://verlagshaus24.de/der-neue-bahnhof-isch-fertig" target="_blank" rel="noopener">{{ m.img('images/buch/bahnhof-2.jpg', 'Buch-Cover', 'inline-img') }}</a>
+          <div><h3>Das Buch</h3><p class="muted mb-0">Frau Kächele &amp; Frau Peters unterwegs. Dialogisch geschrieben in Mundart.</p></div></div>
+          <p class="mt-1">112 Seiten, 13 Illustrationen, € 12,99, <a href="http://www.silberburg-verlag.de" target="_blank" rel="noopener">Silberburg-Verlag</a>, ISBN 978-3-8425-2273-2. <strong>Das kleine Geschenk für alle Momente.</strong> <a href="https://verlagshaus24.de/der-neue-bahnhof-isch-fertig" target="_blank" rel="noopener">Bestellen</a></p>
+          {{ m.video('lUksdkmhDWo', 'Das Video zum Buch', None) }}
+        </div>
+      </div>
+      <div class="mt-2" style="max-width:260px">{{ m.polaroid('images/buch/Bild-6-Wasserfall.jpg', 'Der neue Bahnhof isch fertig') }}</div>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="transformation">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/titel-transformation-klein.jpg', 'Die Kraft der spirituellen Transformation', 'cover') }}</div>
+      <span class="badge">Ausverkauft</span>
+    </div>
+    <div>
+      <p class="eyebrow">Smaragd-Verlag</p>
+      <h2>Die Kraft der spirituellen Transformation</h2>
+      <p class="sub">Humor, Harmonie, Heilung</p>
+      <dl class="meta-list">
+        <dt>Umfang</dt><dd>288 Seiten, A5, gebunden, mit Leseband</dd>
+        <dt>ISBN</dt><dd>978-3-941363-84-7</dd>
+      </dl>
+      <p>Eine Rabe fliegt am Fenster vorbei und verändert die Welt. Es beginnt eine Geschichte um das Zusammenspiel magischer Zufälle, beobachtet aus der fünften Etage mitten in der Stadt.</p>
+      <p>Der Künstler Tef Fonfara erzählt humorvoll, warum wir in der weltlichen Realität die wesentlichen Dinge nicht sehen können. Es wird deutlich, welche Kraft die Gedanken haben, und wie wir sie wirksam machen können. Eine Freundschaft zu einem Raben ist der Anfang einer Ereigniskette um Wahrnehmungen, die bisherige Denkmuster als ungültig erklären.</p>
+      <p>Der Autor beschreibt feinstoffliche Gesetze, die ihre geheimnisvolle Wirkung haben. Wir werden eingeführt in das Verständnis der unsichtbaren Energie. Fonfara verwendet spielerisch „positive Tricks“ für das erfolgreiche Geschäfts-Meeting, für ein umjubeltes Rock’n’Roll-Konzert, für die Heilbehandlung oder wenn er sich kommunizierend mit dem Wespenvolk auf dem Balkon anfreundet.</p>
+      <p>Er erklärt unterhaltsam esoterische Prinzipien und geht tief ins Detail: Jeder kann sich heilen. Jeder kann die Welt verändern. Und es geht um mehr, denn Humor, Harmonie und Heilung bedeuten dasselbe. Es wird gezeigt, wie die unsichtbaren Wirkungen zusammenhängen.</p>
+      <p>Fonfara durchleuchtet die Fähigkeit des Menschen und lässt den Leser ahnen, dass er nun eine andere Welt betreten hat. Wir werden erinnert, dass wir eigentlich nur unsere göttlichen Fähigkeiten vergessen haben und wer wir eigentlich sind.</p>
+      <p>Tef Fonfara bietet in witzigen Anekdoten aus seinem Künstlerleben Beispiele für praktische Anwendungen zur spannenden Sichtweise der abstrakten Welt von Engeln, Geistern und Seelenfreuden. Nichts verbleibt dogmatisch, es werden Denkmuster angeboten, die je nach Spaß oder Wichtigkeit benutzt werden können zur Verbesserung des Lebens.</p>
+      <p>Die Kraft der spirituellen Transformation ist ein informativer spiritueller Erlebnisbericht, dies ist auch ein Handbuch für außergewöhnliche Tipps, hilfreich, heilend und im Zeitgeist des veränderten Weltgefüges nach 2012. Ein Buch für die Neuzeit. <em>– Smaragd Verlag –</em></p>
+      <div class="video-grid mt-2">
+        {{ m.video('ADb7DYBqBnU', 'Trailer zum Buch', 'images/filmbilder/rudolf.jpg', 'Der Rudolf hats gelesen') }}
+        {{ m.video('tckNsvDmTNQ', 'Rabenfütterung', None, 'Video') }}
+      </div>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="reli">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/reli.jpg', 'RELI – aus gutem Grund', 'cover') }}</div>
+      <a class="btn btn--ghost" href="{{ root }}images/buch/Gott-sind-wir-selbst_von_Tef_Fonfara.pdf">Beitrag als PDF</a>
+    </div>
+    <div>
+      <p class="eyebrow">Deutscher Katechetenverlag</p>
+      <h2>RELI – aus gutem Grund</h2>
+      <p class="sub">40 Prominente sprechen in neu erschienenem Buch über religiöse Bildung</p>
+      <dl class="meta-list"><dt>Umfang</dt><dd>264 Seiten</dd><dt>ISBN</dt><dd>978-3882074130</dd></dl>
+      <p>Trier/München – Wie kommen Menschen in der heutigen Zeit zu einer religiösen Entscheidung? Ist Religion überhaupt noch zukunftsfähig oder nur etwas für weltfremde Spinner? Diesen Fragen geht das Buch „RELI – aus gutem Grund. Warum religiöse Bildung wichtig ist“ nach.</p>
+      <p>40 prominente Persönlichkeiten aus Politik, Kirche, Kunst und Kultur lässt der Autor, Professor Dr. Joachim Theis von der Theologischen Fakultät Trier, darin zu Wort kommen.</p>
+      <p><strong>Der Beitrag „Gott sind wir selbst“ von Tef Fonfara kann hier gelesen werden: <a href="{{ root }}images/buch/Gott-sind-wir-selbst_von_Tef_Fonfara.pdf">PDF</a></strong></p>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="gitarren">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/gitarrenverschwoerung-titel-klein.jpg', 'Die Gitarren-Verschwörung', 'cover') }}</div>
+      <span class="badge">Ausverkauft</span>
+    </div>
+    <div>
+      <p class="eyebrow">Satire</p>
+      <h2>Die Gitarren-Verschwörung</h2>
+      <p class="sub">Verschwiegene Geheimnisse eines Musikinstruments</p>
+      <dl class="meta-list"><dt>Umfang</dt><dd>144 Seiten, 8 Illustrationen (Color)</dd><dt>ISBN</dt><dd>978-3-8482-2755-6</dd></dl>
+      <h3>Du glaubst, du wüsstest alles über Gitarren?</h3>
+      <p>Die Gitarren-Verschwörung ist ein Aufklärungswerk über die Gitarren-Geschichte bis hin zur „Global Guitar Elite“, einer Bruderschaft der Illuminati. Geheime Logen entscheiden über deinen Musiker-Ruhm oder Untergang.</p>
+      <p><strong>Viele Tipps für Einsteiger:</strong> Wie werde ich extrem berühmt? Wie komponiere ich einen Gitarren-Welthit? Wie verkaufe ich im eigenen Stadtteil meine ersten 500.000 CDs? Wie ernährt sich der Gitarrist?</p>
+      <p>In spannender Unterhaltung erfahren wir aufschlussreiche Details in Farbe illustriert: Der erste Tonabnehmer war ein Remington-Rasierer! Die Nostradamus-Prophezeiungen über Gitarristen!</p>
+      <p>Wegen der Funde von 1948 in den Höhlen von Qumran war dieses Buch erst möglich. Zwischen den Jesus-Schriftrollen wurde auch die „Structura Templer Gitarra“ entdeckt, die der Autor auf Umwegen erwarb und ein höchst unterhaltsames Buch daraus machte.</p>
+      <p>Dies ist ein Werk der großen Aufklärung und wird die Gitarristen- und Musikwelt verändern: Sie wird noch öfters schmunzeln. Eine beißende Satire als Handbuch zum berühmt werden.</p>
+      <div class="grid grid--2 mt-2">
+        <figure class="card" style="margin:0">{{ m.img('images/buch/john_Mc_Laughlin.jpg', 'Pökelfleisch', 'inline-img') }}<figcaption class="small mt-1">John McLaughlin fand in der Minibar ein Stück Pökelfleisch. Damit rettete er die Honigpumpe von Joseph Beuys.</figcaption></figure>
+        <figure class="card" style="margin:0">{{ m.img('images/buch/nostradamus.jpg', 'Nostradamus', 'inline-img') }}<figcaption class="small mt-1">Nostradamus konnte schon Gitarren mit 3 Hälsen in der Zukunft sehen.</figcaption></figure>
+        <figure class="card" style="margin:0">{{ m.img('images/buch/eierschneider.jpg', 'Eierschneider', 'inline-img') }}<figcaption class="small mt-1">Die erste Gitarre war eigentlich ein Eierschneider für Straußeneier.</figcaption></figure>
+        <figure class="card" style="margin:0">{{ m.img('images/buch/pickup-erfindung.jpg', 'Pickup-Erfindung', 'inline-img') }}<figcaption class="small mt-1">Alle Musiker erhielten ihren ersten Remington-Rasierer. Der Rasierer verklemmte sich im Schallloch der Gitarre. Der Tonabnehmer war erfunden.</figcaption></figure>
+      </div>
+      <div class="mt-2" style="max-width:520px">{{ m.video('Or-YykyBi5Y', 'Trailer zum Buch', 'images/filmbilder/gitarrenbuch-big.jpg', 'Die Gitarren-Verschwörung') }}</div>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="lyrik">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/buch/Titel-lyrik-klein.jpg', 'Lyrik, Witz & Wahrheit', 'cover') }}</div>
+      <span class="badge">Ausverkauft</span>
+      <div style="max-width:200px">{{ m.polaroid('images/buch/pulitzer-preis.jpg', 'Pulitzer-Preis') }}</div>
+    </div>
+    <div>
+      <p class="eyebrow">BoD Norderstedt</p>
+      <h2>Lyrik, Witz &amp; Wahrheit</h2>
+      <p class="sub">Meine täglichen Facebook-Sprüche</p>
+      <dl class="meta-list"><dt>Umfang</dt><dd>112 Seiten</dd><dt>ISBN</dt><dd>978-3-8482-3247-5</dd></dl>
+      <p>Das kleine <strong>Geschenk- und Mitbring-Büchlein</strong> ist skurril, schräg und voller Weisheiten. Zum Lachen und Nachdenken.</p>
+      <p>Dies ist eine Sammlung galanter Rhetorik-Spielereien. Alles schön sortiert in <strong>„Lyrik am Morgen“</strong> / <strong>„Wetter-Lyrik“</strong> / <strong>„Jahreszeit-Lyrik“</strong> und <strong>„Stuttgart-21-Lyrik“</strong>. Dazu kommt eine Serie mit <strong>„Jehova“</strong> (diesmal ohne Zeugen) und ein <strong>„Heimat-Roman“</strong>. Der Autor hat sich daraufhin selbst den <strong>Pulitzer-Preis</strong> verliehen. Sehr unterhaltsam – auch ein Buch für unterwegs und zwischendurch.</p>
+      <div class="quote-cards">
+        <blockquote>Romantisches Liebesgedicht am Freitag:<br>Meine Hände –<br>an deiner Lende –<br>würden auch ohne maulen –<br>den Busen kraulen.</blockquote>
+        <blockquote>Zitat der Jahrhunderte:<br>„Herr Otto, so lange Sie Maiskolben hier einbauen, werden Ihre Motoren nie berühmt.“</blockquote>
+        <blockquote>Peter Maffay wurde in Zweibrücken aus der Stadt gejagt, weil er dem Publikum erklärte: Über sieben Brücken musst du gehn!</blockquote>
+        <blockquote>Eine Domina hat beim Deutschen Fußballbund angerufen, weil sie den Strafraum mieten wollte.</blockquote>
+        <blockquote>Meine Freundin bringt während des Orgasmus den Original Zalando-Schrei. Jetzt denken die Nachbarn: Die kriegt aber oft neue Schuhe!</blockquote>
+        <blockquote>Die vollbusige Kuh vom Allgäu:<br>Weil der Euter schwer zu Boden hing, kaufte der Bauer seiner Kuh einen Büstenhalter, jetzt tropft nur noch H-Milch.</blockquote>
+        <blockquote>In der Klinik wird gejazzt,<br>wenn die Fruchtblase platzt.<br>In Facebook wird gegröhlt,<br>wenn Teflon hier die Zeilen ölt.</blockquote>
+      </div>
+    </div>
+  </article>
+
+  <article class="book anchor-offset" id="hefezopfpower">
+    <div class="book__aside">
+      <div class="cover-wrap">{{ m.img('images/kp/pics/kp-buch-2.jpg', 'Hefezopf-Power', 'cover') }}</div>
+      <a class="btn" href="http://www.gatzanis.de/buecher/single/frau-kaechele-frau-peters-hefezopfpower.html" target="_blank" rel="noopener">Ich möchte das Buch</a>
+    </div>
+    <div>
+      <p class="eyebrow">Jolly Edition Gatzanis Verlag</p>
+      <h2>Hefezopf-Power</h2>
+      <p class="sub">Frau Kächele &amp; Frau Peters – Das Original Textbuch</p>
+      <dl class="meta-list">
+        <dt>Inhalt</dt><dd>59 Kurzgeschichten, 18 zweifarbige Illustrationen, acht Song-Texte</dd>
+        <dt>Umfang</dt><dd>96 Seiten, Hardcover, Fadenheftung</dd>
+        <dt>ISBN</dt><dd>978-3-932855-01-6</dd>
+      </dl>
+      <p>Die Szenen von Frau Kächele &amp; Frau Peters werden immer wieder gerne von Laiengruppen und Mini-Theatern bei Schulaufführungen, Uni-Festen oder „Hefezopf-Parties“ aufgeführt und nachgespielt. Deshalb gab es immer wieder Anfragen bezüglich der Original-Texte.</p>
+      <p>Kopierte Original-Texte jedoch konnten nicht zur Veröffentlichung weitergegeben werden, weil sie alle nur handschriftlich existieren und nur der Autor Teflon Fonfara selbst kann den schwäbisch-skurrilen Text entziffern, den nur er selbst bei den Aufnahmen auch sprach.</p>
+      <p>Wegen dieser Nachfrage wurde nun das Textbuch mit entsprechendem Aufwand zusammengestellt und von Teflon Fonfara illustriert.</p>
+      <p><strong>Erhältlich bei <a href="http://www.gatzanis.de/buecher/single/frau-kaechele-frau-peters-hefezopfpower.html" target="_blank" rel="noopener">Gatzanis</a>.</strong> Alles über Frau Kächele &amp; Frau Peters: <a href="{{ root }}kp/index.html">www.fraukaechele.de</a></p>
+    </div>
+  </article>
+</div>
+<div class="wrap" style="padding-bottom:48px">{{ m.privacy_note() }}</div>
+{% endblock %}

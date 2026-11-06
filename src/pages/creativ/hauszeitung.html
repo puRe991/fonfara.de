@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('Kreatives', 'Die Hauszeitung.', 'Warum eine eigene Firmenzeitung?') }}
+<section class="section--tight">
+  <div class="wrap split">
+    <div class="prose">
+      <p>Eine Hauszeitung zeigt <strong>Firmen-News</strong>, neue <strong>Produkte</strong> aus Ihrem Haus, Buntes und Interessantes, Fotos und vieles mehr.</p>
+      <p>Eine Hauszeitung ist unterhaltsam und nicht so nüchtern wie ein Waren-Prospekt. Und: Eine gedruckte Hauszeitung geht nicht verloren in der Flut von Werbemails und Spam.</p>
+      <h2>Ihre Möglichkeiten</h2>
+      <ul>
+        <li>Regelmäßige News zu Ihren Produkten, über Ihre Firma, über besondere Mitarbeiter oder Ansprechpartner u.v.m.</li>
+        <li>Präsentation Ihrer Hauszeitung auf Messen und bei Events.</li>
+        <li>Legen Sie dem Warenversand Ihre aktuelle Hauszeitung bei.</li>
+        <li>Zur Auslage im Einzelhandel (Ladentheke etc.).</li>
+        <li>Und selbstverständlich bleibt neben der Newsletter-Version auch noch der klassische Postversand.</li>
+      </ul>
+      <h2>Und so geht's</h2>
+      <p>Hier kommt alles aus einer Hand von der Redaktion bis zur Druckvorlage: Modern gestaltet im Gewand des klassischen Zeitungslayouts, optisch Ihrem Unternehmen angepasst.</p>
+      <p>Dazu sammle ich Fotos Ihrer Produkte, schreibe Texte, und bringe alles in ein unterhaltsames Erscheinungsbild. Sie brauchen sich um keine weiteren Details kümmern.</p>
+      <h2>Die Kosten</h2>
+      <p>Die Kosten für Text und Gestaltung ergeben sich aus dem Seiten-Umfang Ihrer Hauszeitung. Wenn ich die Details kenne, mache ich Ihnen gerne ein Angebot.</p>
+      <p>Die Druckkosten im Format A4, Auflage 1000 Exemplare, 4-farbig, 8 Seiten Umfang, liegen bei <a href="http://www.print24.de" target="_blank" rel="noopener">print24.de</a> ab EUR 151,94 (Netto).</p>
+      <p><a class="btn" href="mailto:teflon@fonfara.de">Angebot anfragen</a></p>
+    </div>
+    <div>
+      <p class="eyebrow">Ein Layout-Muster</p>
+      <div class="stack">
+        {{ m.img('creativ/images/Hauszeitung-Layout-1.jpg', 'Hauszeitung Layout-Muster Seite 1', 'inline-img') }}
+        {{ m.img('creativ/images/Hauszeitung-Layout-2.jpg', 'Hauszeitung Layout-Muster Seite 2', 'inline-img') }}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

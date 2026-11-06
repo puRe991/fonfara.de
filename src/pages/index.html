@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Künstler · Musiker · Autor · Performer · Grafiker</p>
+      <h1><span class="w">Humor,</span><span class="w">Harmonie,</span><span class="w"><span>Heilung.</span></span></h1>
+      <p class="lead">Teflon Fonfara ist Musiker, Autor, Performer, Grafiker und mehr. Hier die Kurzübersicht.</p>
+      <div class="hero__cta">
+        <a class="btn" href="teflon/index.html">Die Teflon-Fonfara-Story</a>
+        <button class="btn btn--ghost" type="button" data-yt="BT88SRbMZVU" data-title="Wer ist Teflon Fonfara?">{{ m.play_icon() }} Wer ist Teflon Fonfara?</button>
+      </div>
+    </div>
+    <div class="hero__art" aria-hidden="false">
+      {{ m.polaroid('images/person/teflon-fonfara-2008.jpg', 'Teflon Fonfara mit Electric Sitar', 'Teflon Fonfara mit seiner 10-saitigen Electric Sitar', 'p1') }}
+      {{ m.polaroid('images/titelfoto/frau-kaechele.jpg', 'Frau Kächele', 'Frau Kächele (Zeichnung)', 'p2') }}
+      {{ m.polaroid('images/titelfoto/peters.jpg', 'Frau Peters', 'Frau Peters (Zeichnung)', 'p3') }}
+      <div class="sticker"><span><b>800+</b>Folgen SDR3</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    {% for i in range(2) %}
+    <span>Musik</span><span>Comedy</span><span>Film &amp; Video</span><span>Meditation</span><span>Bücher</span><span>Hörspiel</span><span>Hefezopf – mit einem Haufen Butter drin</span>
+    {% endfor %}
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap feature">
+    <div class="cover-wrap reveal">
+      <a href="kp/cd.html">{{ m.img('images/buch/cover-bahnhof.jpg', 'Schwäbische Comedy Frau Kächele & Frau Peters – Der neue Bahnhof isch fertig', 'cover') }}</a>
+      <div class="sticker"><span><b>92</b>Minuten</span></div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Das Jahrhundert-Hörspiel!</p>
+      <h2>Der neue Bahnhof isch fertig</h2>
+      <p class="lead">Die Kultweiber Frau Kächele &amp; Frau Peters aus dem Wilden Süden besichtigen den neuen Stuttgarter Bahnhof und erleben dort unfassbare Abenteuer.</p>
+      <p>Hörspiel und Buch – ein surreales Vergnügen voller aberwitziger Einfälle rund um Stuttgart 21.</p>
+      <div class="btn-row">
+        <a class="btn" href="kp/cd.html">Mehr zum Hörspiel</a>
+        <a class="btn btn--ghost" href="https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064" target="_blank" rel="noopener">Bei HöBu erhältlich</a>
+        <button class="btn btn--ghost" type="button" data-yt="5FzBQgFSPwo" data-title="Hörspiel-Trailer „Der neue Bahnhof isch fertig“">{{ m.play_icon() }} Trailer</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Die Kurzübersicht</h2>
+      <p>Von Radio-Comedy über Weltmusik bis zur Licht-Atem-Meditation – alles an einem Ort.</p>
+    </div>
+    <div class="grid grid--3">
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/filmbilder/eberhard-kaechele-vegane-kuttla.jpg', 'Eberhard Kächele') }}</div>
+        <div>
+          <p class="kicker">Comedy</p>
+          <h3><a class="stretched" href="kp/index.html">Frau Kächele &amp; Frau Peters</a></h3>
+          <p class="muted">Alles über Frau Kächele &amp; Frau Peters sowie auch Eberhard Kächele.</p>
+        </div>
+      </article>
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/titelfoto/tef3.jpg', 'Teflon Fonfara mit Gitarre') }}</div>
+        <div>
+          <p class="kicker">Musik &amp; Projekte</p>
+          <h3><a class="stretched" href="musik/index.html" title="Musik &amp; Projekte Teflon Fonfara">Musik &amp; Projekte</a></h3>
+          <p class="muted">Liveband ASIAN STARS, Projekt SIRIUS-ENGEL und mehr.</p>
+        </div>
+      </article>
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/titelfoto/video-pic.jpg', 'Video Teflon Fonfara') }}</div>
+        <div>
+          <p class="kicker">Film &amp; Video</p>
+          <h3><a class="stretched" href="video/index.html">Film &amp; Video</a></h3>
+          <p class="muted">TV, Film, Doku, Musikclips, TV-Comedy, Live-Musik, Live-Comedy.</p>
+        </div>
+      </article>
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/musik/honigbiene/summen.jpg', 'Das Summen der Honigbiene') }}</div>
+        <div>
+          <p class="kicker">Kunstband mit CD</p>
+          <h3><a class="stretched" href="honigbiene/index.html">Das Summen der Honigbiene</a></h3>
+          <p class="muted"><strong>Musik:</strong> Teflon Fonfara<br><strong>Bilder:</strong> Roland Bentz</p>
+        </div>
+      </article>
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/titelfoto/tef-2008.jpg', 'Tef') }}</div>
+        <div>
+          <p class="kicker">Meditation</p>
+          <h3><a class="stretched" href="meditation/index.html">Online-Meditation</a></h3>
+          <p class="muted">Online-Meditation zur Entspannung und Selbstheilung, Licht-Atem-Meditation.</p>
+        </div>
+      </article>
+      <article class="card card--link tile reveal">
+        <div class="tile__img">{{ m.img('images/buch/liebe-in-magischen-Zeiten.jpg', 'Liebe in magischen Zeiten') }}</div>
+        <div>
+          <p class="kicker">Buch – Neu!</p>
+          <h3><a class="stretched" href="buecher.html">Liebe in magischen Zeiten</a></h3>
+          <p class="muted">Abenteuer, Fußball und die andere Realität. Alle Bücher und das Hörspiel.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Videos</h2>
+      <a class="link-arrow" href="video/index.html">Weitere Videos hier</a>
+    </div>
+    <div class="video-grid">
+      {{ m.video('BT88SRbMZVU', 'Wer ist Teflon Fonfara?', 'images/filmbilder/filmbild-5.jpg', 'Doku') }}
+      {{ m.video('13Vq_wIxrdA', 'Du elektrisierst mich (Das Girl aus Prag)', 'images/filmbilder/prag.jpg', 'Musik-Comedy Video') }}
+      {{ m.video('r5Ogfc5p2oA', 'Der Sommer kommt', 'images/filmbilder/sommer_kommt.jpg', 'Comedy Music Video') }}
+      {{ m.video('xX2BZ5u0hxs', 'The Länd. The Song.', 'images/filmbilder/titel-laend.jpg', 'Satire') }}
+      {{ m.video('5FzBQgFSPwo', 'Hörspiel-Trailer „Der neue Bahnhof isch fertig“', 'images/filmbilder/bahnhofstrailer.jpg', 'Trailer', 'Erhältlich bei <a href="https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064" target="_blank" rel="noopener">HöBu</a>.') }}
+      {{ m.video('_8rFahSoTC0', 'ASIAN STARS play „Sternenschlüssel“', 'images/filmbilder/sternenschluessel.jpg', 'Live') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+
+<section class="section section--sun">
+  <div class="wrap feature feature--rev">
+    <div class="cover-wrap reveal">
+      {{ m.img('images/person/cover-sexphonie.jpg', 'Cover der LP Sexphonie', 'cover') }}
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" style="color:inherit">Wusstest du, dass …</p>
+      <h2>… Teflon Fonfaras erste LP „SEXPHONIE“ 41 Jahre später als „Perle des Krautrocks“ gefeiert wurde?</h2>
+      <p class="lead">So nannte sie der englische Musikautor Alan Freeman – und das spanische Label <a href="https://guerssenrecords.bandcamp.com/album/sexphonie" target="_blank" rel="noopener">Guerssen Records</a> hat sie neu veröffentlicht.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://dereksmusicblog.wordpress.com/2016/06/07/tyll-sexphonie/" target="_blank" rel="noopener">Mehr …</a>
+        <a class="btn btn--ghost" href="https://guerssenrecords.bandcamp.com/album/sexphonie" target="_blank" rel="noopener">Bei Guerssen Records</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--2">
+      <div class="callout callout--ink reveal">
+        <p class="eyebrow">Licht-Atem-Meditation</p>
+        <h2>Kostenlos. Online. Seit 2004.</h2>
+        <p>Zum Auftanken, Relaxen und zur Selbstheilung – rund 28 Minuten, auch für Anfänger.</p>
+        <a class="btn btn--sun" href="meditation/index.html">Zur Meditation</a>
+      </div>
+      <div class="callout reveal">
+        <p class="eyebrow" style="color:inherit">Kreatives</p>
+        <h2>Darf Werbung Spaß machen?</h2>
+        <p>Comedy &amp; Werbung – die attraktive Mischung. Humorvolle Videos, Konzepte und Hauszeitungen aus einer Hand.</p>
+        <a class="btn" href="creativ/index.html">Kreatives ansehen</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

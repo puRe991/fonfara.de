@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Online-Meditation · kostenfrei</p>
+    <h1>Die Licht-Atem-Meditation</h1>
+    <p class="lead"><strong>Licht-Atem-Meditation Original, 28 Min.</strong> Eine einfache Übung morgens zu Beginn eines guten Tages oder zum Entspannen zwischendurch, auch in der Mittagspause im Büro oder vor der anstrengenden Geschäftsbesprechung, und natürlich auch nach Feierabend …</p>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('images/person/portrait-weiss.jpg', 'Teflon Fonfara', 'Teflon Fonfara, Lehrer für Mentaltraining, Selbstheilung und Meditation', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap split split--wide-left">
+    <div class="callout callout--ink">
+      <p class="eyebrow">Und so geht's …</p>
+      <h2>Jetzt anhören</h2>
+      <p>Hier kannst du die Licht-Atem-Meditation anhören, erlernen und erleben – besonders auch geeignet für Anfänger. Diese Meditation dient der inneren Entspannung und der Aktivierung der Selbstheilung für körperliche oder seelische Leiden. Dauer ca. 28 Minuten.</p>
+      <div class="lazy-embed" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)">
+        <strong>Licht-Atem-Meditation (SoundCloud)</strong>
+        <button class="btn btn--sun" type="button" data-embed="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304931942&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true" data-height="300" data-title="Licht-Atem-Meditation">{{ m.play_icon() }} Meditation starten</button>
+        <span class="small" style="color:inherit;opacity:.8">Der Player wird erst nach Klick von SoundCloud geladen – siehe <a href="{{ root }}impressum.html#datenschutz">Datenschutz</a>.</span>
+      </div>
+      <p class="mt-1 mb-0"><a href="http://music.instantlicensing.com/audio/licht-atem-meditation-original-mit-tef-fonfara-1003868" target="_blank" rel="noopener">MP3-Download hier</a> · <a href="{{ root }}meditation/cd.html">Die CD ist leider nicht mehr erhältlich.</a></p>
+    </div>
+    <div class="card">
+      <span class="badge badge--sun">Kostenfrei</span>
+      <h3 class="mt-1">Dieses Online-Angebot ist kostenfrei</h3>
+      <p>… und kann unbegrenzt oft genutzt werden.</p>
+      <p>Bitte bediene dich mit Spaß und ohne Erwartungen oder gar Zwängen. Fühle dich, als würdest du ein Hörspiel anhören, in dem du aufgefordert wirst, mitzuatmen. Mache dies und genieße es – wenn du kannst täglich.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>Die Entspannungsübung zur Selbstheilung</h2>
+      <p>Diese einfache Übung wurde von Teflon Fonfara entwickelt und wird von ihm seit ca. 1986 in Gruppen oder Einzelsitzungen erfolgreich angewendet. Die Übung erhielt von ihm die Bezeichnung „Licht-Atem-Meditation“. Inzwischen findet man im Web unter dem Begriff „Licht-Atem-Meditation“ ganz unterschiedliche Angebote. Wir dürfen mit Freude darauf hinweisen, dass die hier angebotene Meditationsübung authentisch ist und keine auch nur erdenklichen Nachteile oder gar Schäden bewirken kann. Wer mit dieser Übung versucht, sein Leben in eine harmonisch-heilsame Richtung zu lenken, ist mit Sicherheit hier „in guten Händen“.</p>
+    </div>
+    <div class="prose">
+      <h2>Praktische Tipps zur Online-Meditation</h2>
+      <p>So entspannst du dich:</p>
+      <ul>
+        <li>Stelle deinen PC-Lautsprecher auf normale Lautstärke.</li>
+        <li>Nach dem Start-Klick lege dich flach auf dein Bett, auf das Sofa oder auf den Boden und lege deine Arme neben dich.</li>
+        <li>Folge den führenden Worten.</li>
+        <li>Sei dabei locker und genieße es.</li>
+        <li>Die Übung kann auch im Sitzen erfolgen („Kutscherhaltung“).</li>
+        <li>Atmung: Wenn du dabei wirklich tief atmest, kommst du der Heilkraft sehr viel näher. Wenn du flach atmest, ist dieser Vorgang eher flach, weniger effektvoll und die Wirkung reduziert.</li>
+        <li>Genieße die Meditation von Anfang bis Schluss <strong>ohne</strong> Unterbrechung. Wenn du gestört wirst, solltest du noch einmal von vorne beginnen.</li>
+        <li>Am besten vorher Telefon, Handy und Hausklingel etc. abschalten. (Und auch den Herd … ;-)</li>
+        <li>Falls du eine Katze hast – Katzen lieben diese Übung! – wird sie während der Übung zu dir kommen und sich vielleicht dazu oder drauflegen. Das könnte für dich störend wirken, mach in der Anfangszeit besser die Übung zuerst alleine. Also die Katze muss leider raus aus dem Zimmer. Dies betrifft auch andere Tiere.</li>
+        <li>Wenn du hinterher meinst, du bist eingeschlafen, ist das nicht schlimm. Der Körper „hört“ auch, wenn du schläfst. Manchmal schläft man/frau auch ein, weil die Atmung ein wenig zu flach war. Am besten möglichst lange <strong>tief</strong> mitatmen.</li>
+        <li>Manchmal aber auch meint man/frau, während der Übung eingeschlafen zu sein, aber in Wirklichkeit war es kein Schlaf, sondern ein kleiner Trance-Zustand. Mit meinen Schlussworten am Ende der Übung bist du wieder glasklar. Dann kannst du noch ein paar Minuten liegen bleiben und dann erfrischt deinem Tagwerk nachgehen.</li>
+      </ul>
+      <p>Weitere Fragen und Antworten findest du <a href="{{ root }}meditation/fragen.html">hier</a> …</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

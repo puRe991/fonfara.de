@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('Humor', 'Frau Kächele & Frau Peters – Schwäbische Comedy') }}
+<section class="section--tight">
+  <div class="wrap grid grid--2">
+    <article class="card">
+      <div class="scrapbook" style="justify-content:flex-start">
+        {{ m.polaroid('images/titelfoto/peters.jpg', 'Frau Peters') }}
+        {{ m.polaroid('images/titelfoto/frau-kaechele.jpg', 'Frau Kächele') }}
+      </div>
+      <h2 class="mt-1"><a href="{{ root }}kp/index.html">Frau Kächele &amp; Frau Peters</a></h2>
+      <p>Die Kult-Comedy-Serie des damaligen SDR. Mundart pur! Es entstanden über 800 Folgen in einer Laufzeit von 12 Jahren. Teflon erfindet die Serie, schreibt alle Folgen, spricht alle Stimmen (Hörfunk) und spielt beide Personen selbst (TV).</p>
+      <a class="link-arrow" href="{{ root }}kp/live.html">Mehr …</a>
+    </article>
+    <article class="card">
+      {{ m.img('images/kp/comic2/guitar.jpg', 'Schwäbische Comedy Frau Kächele & Frau Peters Comic', 'inline-img') }}
+      <h2 class="mt-1">Weitere Serien</h2>
+      <p>Es entstanden weitere Serien beim SWF/SWR: „Radio-Mokkaschnitte“, „Radio-Heilung in Stereo“, „Radio-Guru“ und andere.</p>
+    </article>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap feature">
+    <div class="cover-wrap">{{ m.img('images/kp/2019/schwaebische-comedy-1.jpg', 'Schwäbische Comedy Frau Kächele & Frau Peters', 'cover') }}</div>
+    <div>
+      {{ m.img('images/kp/elements2/logo-kp-2.jpg', 'Frau Kächele & Frau Peters', 'logo-img') }}
+      <h2 class="mt-1">Schwäbische Comedy live.</h2>
+      <a class="btn" href="{{ root }}kp/live.html">Mehr …</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

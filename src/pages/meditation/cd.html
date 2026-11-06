@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">CD &amp; Download</p>
+    <h1>Licht-Atem-Meditation als MP3</h1>
+    <p class="lead">Die „Licht-Atem-Meditation“ gibt es in 3 Varianten. Als <strong>MP3-Download</strong> (Einzeltitel Euro 3,99), oder <strong>kostenlos</strong> anhören und testen <a href="{{ root }}meditation/index.html">hier</a>. Die CD ist leider nicht mehr erhältlich.</p>
+    <p class="muted">Folge dem Link zu meinem Download-Partner. Klicke dort auf ADD TO BASKET (Warenkorb). Bezahlt wird zuverlässig über PayPal.</p>
+  </div>
+  <div class="cover-wrap">{{ m.img('images/meditation/medi-cd-titel3.jpg', 'CD Licht-Atem-Meditation', 'cover', 'eager') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap grid grid--3">
+    <article class="card">
+      <span class="badge badge--sun">Titel 1 · 27:42 Min.</span>
+      <h3 class="mt-1">Licht-Atem-Meditation (Original)</h3>
+      <p class="muted">Die geführte Übung. Dies ist die reguläre Übung.</p>
+      <p>Die „Geführte Meditation für tagsüber“ dient zur Entspannung und Selbstheilung für zwischendurch – am Morgen oder in der Mittagspause oder am Abend nach dem Tages-Stress. Wir harmonisieren den Gesamtzustand und erfrischen uns an der unbegrenzten Kraft des Feinstofflichen. In einem harmonischen Zustand bleiben wir gesund und schöpfen körperliche und geistige Kraft für unsere tägliche Arbeit und für positive Gedanken, die ihre kreative Wirkung haben.</p>
+      <p>Diese Version ist in voller Länge online hörbar <a href="{{ root }}meditation/index.html">hier</a>.</p>
+      <a class="btn btn--sm" href="http://music.instantlicensing.com/audio/licht-atem-meditation-original-mit-tef-fonfara-1003868" target="_blank" rel="noopener">Download hier …</a>
+    </article>
+    <article class="card">
+      <span class="badge badge--sun">Titel 2 · 22:43 Min.</span>
+      <h3 class="mt-1">Sanftes Schweben</h3>
+      <p class="muted">Instrumental-Version mit Naturgeräuschen, ohne Stimme.</p>
+      <p>Musik aus Licht-Atem-Meditation (Titel 1). Instrumentalversion mit Naturgeräuschen, ohne Stimme. Die Musik ist geeignet zum stillen Nachdenken, zum Entspannen, auch als Begleitmusik für Therapien und Behandlungen.</p>
+      <a class="btn btn--sm" href="http://music.instantlicensing.com/audio/sanftes-schweben-mellow-floating-meditation-musik-aus-licht-1003869" target="_blank" rel="noopener">Download hier …</a>
+    </article>
+    <article class="card">
+      <span class="badge badge--sun">Titel 3 · 25:45 Min.</span>
+      <h3 class="mt-1">Einschlaf-Meditation</h3>
+      <p class="muted">Die Hilfe bei Einschlafstörungen.</p>
+      <p>Geführte Meditation zum Einschlafen. Diese Version ist fast identisch mit der regulären Licht-Atem-Meditation (Titel 1), jedoch werden wir hier am Ende in eine Tiefschlafphase geführt und dürfen die Nacht friedlich genießen. Dazu ins Bett gehen, gut zudecken, Titel 3 starten, zuhören und harmonisch einschlafen.</p>
+      <a class="btn btn--sm" href="http://music.instantlicensing.com/audio/einschlaf-meditation-hilfe-bei-einschlafstorungen-mit-tef-fo-1003867" target="_blank" rel="noopener">Download hier …</a>
+    </article>
+  </div>
+  <div class="wrap mt-2">
+    <p class="muted">Text, Musik, Sprecher: Teflon Fonfara · <a href="{{ root }}meditation/fragen.html">Fragen und Antworten</a> findest du <a href="{{ root }}meditation/fragen.html">hier</a>.</p>
+  </div>
+</section>
+{% endblock %}

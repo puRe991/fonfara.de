@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set HOEBU = 'https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064' %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">SDR-Kult-Comedy</p>
+    <h1>Der neue Bahnhof isch fertig</h1>
+    <p class="lead">Frau Kächele &amp; Frau Peters erleben Stuttgart 21. Erhältlich als Hörspiel und als Buch.</p>
+  </div>
+  <div class="cover-wrap">{{ m.img('images/buch/cover-bahnhof.jpg', 'Der neue Bahnhof isch fertig', 'cover', 'eager') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap grid grid--2">
+    <article class="card">
+      <p class="eyebrow">Das Hörspiel</p>
+      <div class="tile" style="grid-template-columns:100px 1fr">
+        <a href="{{ HOEBU }}" target="_blank" rel="noopener">{{ m.img('images/buch/bahnhof-1.jpg', 'Hörspiel-Cover', 'inline-img') }}</a>
+        <div>
+          <h3>Der neue Bahnhof isch fertig</h3>
+          <p class="muted">Frau Kächele &amp; Frau Peters, von Teflon Fonfara</p>
+        </div>
+      </div>
+      <dl class="meta-list">
+        <dt>Länge</dt><dd>92 Minuten</dd>
+        <dt>Preis</dt><dd>nur Euro 5,99</dd>
+        <dt>Verlag</dt><dd>Maritim Verlag</dd>
+      </dl>
+      <p><a href="{{ HOEBU }}" target="_blank" rel="noopener">Hörspiel-Download</a> in allen großen Portalen wie auch bei <a href="{{ HOEBU }}" target="_blank" rel="noopener">HöBu</a>.</p>
+      <a class="btn" href="{{ HOEBU }}" target="_blank" rel="noopener">Download</a>
+      <div class="mt-2">{{ m.video('5FzBQgFSPwo', 'Video zum Hörspiel', 'images/filmbilder/bahnhofstrailer.jpg', 'Trailer') }}</div>
+    </article>
+    <article class="card">
+      <p class="eyebrow">Das Buch</p>
+      <div class="tile" style="grid-template-columns:100px 1fr">
+        <a href="http://www.silberburg-verlag.de" target="_blank" rel="noopener">{{ m.img('images/buch/bahnhof-2.jpg', 'Buch-Cover', 'inline-img') }}</a>
+        <div>
+          <h3>Der neue Bahnhof isch fertig</h3>
+          <p class="muted">Frau Kächele &amp; Frau Peters unterwegs, von Teflon Fonfara</p>
+        </div>
+      </div>
+      <dl class="meta-list">
+        <dt>Umfang</dt><dd>112 Seiten, 13 Illustrationen</dd>
+        <dt>Preis</dt><dd>€ 12,99</dd>
+        <dt>Verlag</dt><dd><a href="http://www.silberburg-verlag.de" target="_blank" rel="noopener">Silberburg-Verlag</a></dd>
+        <dt>ISBN</dt><dd>978-3-8425-2273-2</dd>
+      </dl>
+      <p>Das kleine Geschenk für alle Momente.</p>
+      <a class="btn" href="http://www.silberburg-verlag.de" target="_blank" rel="noopener">Bestellen</a>
+      <div class="mt-2">{{ m.video('lUksdkmhDWo', 'Das Video zum Buch', None, 'Video') }}</div>
+    </article>
+  </div>
+  <div class="wrap mt-1">{{ m.privacy_note() }}</div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="prose">
+      <p class="eyebrow">Die Mitwirkenden</p>
+      <h2>Hörspiel mit den Stimmen von</h2>
+      <ul>
+        <li><strong>Michael Gaedt</strong> (Soko Stuttgart, KGB-Comedy, Kleine Tierschau, Die Fallers, u.v.m.)</li>
+        <li><strong>Heiko Volz</strong> (Äffle-Sprecher in „Äffle &amp; Pferdle“, Neckar-Käptn, Regio-TV u.v.m.)</li>
+        <li><strong>Babs Steinbock</strong> (Cleaning Women, DooWop Mädla, Frau Kächele &amp; Frau Peters, u.v.m.)</li>
+        <li><strong>Roland Baisch</strong> (KGB-Comedy, Kleine Tierschau, Comedy Factory, Count Baischy Orchester u.v.m.)</li>
+        <li><strong>Frl. Wommy Wonder</strong> (Comedian, Performer)</li>
+        <li><strong>Bernd Kohlhepp</strong> (Hämmerle und Leibssle, u.v.m.)</li>
+        <li><strong>Teflon Fonfara</strong> (Frau Kächele &amp; Frau Peters u.v.m.)</li>
+      </ul>
+      <h2>Der Inhalt</h2>
+      <p class="lead">Die SDR-Kultweiber Frau Kächele &amp; Frau Peters aus dem Wilden Süden besichtigen den neuen Stuttgarter Bahnhof und erleben dort unfassbare Abenteuer und skurrile Geschichten zu Stuttgart 21.</p>
+      <p>Frau Kächele &amp; Frau Peters, die Hefezopf liebenden Damen, erleben unfassbare Abenteuer im neuen Stuttgarter Bahnhof. Gleich zu Anfang müssen sie ein »Hopftraining« absolvieren, um auf den schräg angelegten Bahnsteigen den ständig vorbeirollenden Koffern und Kinderwägen aus dem Weg springen zu können.</p>
+      <p>Statt Zug zu fahren – laufend fallen welche aus oder kommen zu spät –, besichtigen sie den zum Eventtempel mutierten Bahnhof. Wegen eines Wassereinbruchs fahren sie schließlich statt mit der Bahn im Tretboot durch die Tunnel nach Ulm. Doch dann biegen sie falsch ab, stürzen einen Wasserfall hinab und landen in der Neckarschleuse neben einem Kreuzfahrtschiff. Als sie erfahren, dass im ICE Waschmaschinen stehen, in denen Schwarzgeld gewaschen wird, machen sich die Damen mit detektivischem Gespür daran, eine Verschwörung aufzudecken …</p>
+      <p>Ein surreales Vergnügen voller aberwitziger Einfälle. Von Teflon Fonfara, dem Erfinder der heißgeliebten Kult-Comedy rund um die beiden schwäbischen Originale.</p>
+    </div>
+    <div class="scrapbook" style="align-content:start">
+      {{ m.polaroid('images/kp/pics/Der-neue-Bahnhof-isch-fertig.jpg', 'Der neue Bahnhof isch fertig') }}
+      {{ m.polaroid('images/kp/pics/KP-U4.jpg', 'Frau Kächele & Frau Peters') }}
+      {{ m.polaroid('images/kp/pics/verfolgung.jpg', 'Verfolgung') }}
+      {{ m.polaroid('images/buch/Bild-6-Wasserfall.jpg', 'Wasserfall') }}
+      {{ m.polaroid('images/kp/pics/Saal.jpg', 'Im SWR Sendesaal') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="cds">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>CDs von Frau Kächele &amp; Frau Peters</h2>
+      <p>Einzelne CDs gibt es nur noch auf Anfrage solange Vorrat reicht. Anfrage per Mail an <a href="mailto:teflon@fonfara.de?subject=CD%20Frau%20K%C3%A4chele%20%26%20Frau%20Peters">teflon@fonfara.de</a>.<br>
+      Preis pro CD Euro 15,– zuzügl. Versand innerhalb Deutschland Euro 2,50, europaweit Euro 4,–, weltweit Euro 7,–.</p>
+    </div>
+    <div class="discs">
+      <div class="disc">
+        {{ m.img('images/kp/pics/cd-4.jpg', 'CD Der Hefezopf-Höhepunkt') }}
+        <h3>„Der Hefezopf-Höhepunkt“</h3>
+        <p><em>(Das war der Wilde Süden)</em></p>
+        <p>CD mit 39 Original-Radio-Slapsticks. Gesamt-Laufzeit 72:36 Minuten. GEMA Text/Musik: Teflon Fonfara</p>
+        {{ m.img('images/kp/pics/cover4bRR.jpg', 'Inhalt der CD', style='aspect-ratio:auto') }}
+      </div>
+      <div class="disc">
+        {{ m.img('images/kp/pics/cd-3.jpg', 'CD Jubiläum 10 Jahre') }}
+        <h3>„Jubiläum 10 Jahre Frau Kächele &amp; Frau Peters“</h3>
+        <p><em>(Noch eins nei!)</em></p>
+        <p>CD mit 36 Titeln, davon 31 Original-Radio-Slapsticks und 5 House/Techno-Songs. Gesamt-Laufzeit 72:44 Min. Text/Musik: Teflon Fonfara GEMA</p>
+        {{ m.img('images/kp/pics/cover3bR.jpg', 'Inhalt der CD', style='aspect-ratio:auto') }}
+      </div>
+      <div class="disc">
+        {{ m.img('images/kp/pics/cd-2.jpg', 'CD Neuer Hefezopf-Wahnsinn') }}
+        <h3>„Neuer Hefezopf-Wahnsinn“</h3>
+        <p>CD mit 38 Titeln, davon 33 Original Radio-Slapsticks und 5 Songs. Gesamt-Laufzeit 73:11 Min. Text/Musik: Teflon Fonfara – GEMA</p>
+        {{ m.img('images/kp/pics/cover2bR.jpg', 'Inhalt der CD', style='aspect-ratio:auto') }}
+      </div>
+      <div class="disc">
+        {{ m.img('images/kp/pics/cd-1.jpg', 'CD Neuer Hefezopf-Wahnsinn') }}
+        <h3>„Neuer Hefezopf-Wahnsinn“</h3>
+        <p>CD mit 30 Titeln, davon 25 Original-Radio-Slapsticks und 5 Songs. Gesamt-Laufzeit 73:46 Min. Text/Musik: Teflon Fonfara – GEMA</p>
+        {{ m.img('images/kp/pics/cover1bR.jpg', 'Inhalt der CD', style='aspect-ratio:auto') }}
+      </div>
+      <div class="disc">
+        {{ m.img('images/kp/pics/lp.jpg', 'LP Die total schrille Comic Show') }}
+        <h3>„Die total schrille Comic Show“ – Vinyl</h3>
+        <p>LP mit 23 Titeln gesamt. Text/Musik: Teflon Fonfara – GEMA</p>
+        {{ m.img('images/kp/pics/lp-b1R.jpg', 'Inhalt der LP Seite 1', style='aspect-ratio:auto') }}
+        {{ m.img('images/kp/pics/lp-b2R.jpg', 'Inhalt der LP Seite 2', style='aspect-ratio:auto') }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="buch">
+  <div class="wrap feature">
+    <div class="cover-wrap">{{ m.img('images/kp/pics/kp-buch.jpg', 'Hefezopf-Power – das Original Textbuch', 'cover') }}</div>
+    <div>
+      <p class="eyebrow">Das Original-Textbuch</p>
+      <h2>„Hefezopf-Power“</h2>
+      <p class="muted">von Teflon Fonfara · Jolly Edition Gatzanis Verlag</p>
+      <p>Die Szenen von Frau Kächele &amp; Frau Peters werden immer wieder gerne von Laiengruppen und Mini-Theatern bei Schulaufführungen, Uni-Festen oder „Hefezopf-Parties“ aufgeführt und nachgespielt. Deshalb gab es immer wieder viele Anfragen bezüglich der Original-Texte.</p>
+      <p>Kopierte Original-Texte jedoch konnten nicht zur Veröffentlichung weitergegeben werden, weil sie alle nur handschriftlich existieren und nur der Autor Teflon Fonfara selbst kann den schwäbisch-skurrilen Text entziffern, den nur er selbst bei den Aufnahmen auch sprach.</p>
+      <p>Wegen dieser Nachfrage wurde das Textbuch mit entsprechendem Aufwand zusammengestellt und von Teflon Fonfara illustriert.</p>
+      <a class="btn" href="http://www.gatzanis.de/unsere-buecher/frau-kaechele-frau-peters-hefezopfpower.html" target="_blank" rel="noopener">Erhältlich bei Gatzanis</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

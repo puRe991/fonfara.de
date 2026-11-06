@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Studio-Projekt</p>
+    <h1>Siriusengel</h1>
+    <p class="lead">SIRIUS-ENGEL, ja, deine Kinder würden die Lieder mitsingen. Eine elektromagnetische Wechselstrom-Kapelle mit dem kosmischen Tanz zur seelischen Liebkosung.</p>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('images/musik/cover-ballade2012.jpg', 'Ballade 2012', 'Cover Ballade 2012 – Sirius-Engel', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap split split--center">
+    <div class="prose">
+      <p><strong>SIRIUS-ENGEL</strong> war ein Studioprojekt von Teflon Fonfara. Das Konzept beinhaltet reduzierte einfache Songs zu Themen wie „2012 – Weltuntergang“ und die Zeit danach.</p>
+      <p>Erlebe feinstoffliche Stereo-Schwingungen und den Mut zur volksnahen Tanzmusik für magnetisierte Erdenbürger.</p>
+      <h2>Wer sind SIRIUSENGEL?</h2>
+      <p>Es gibt weltweit einige SIRIUS-ENGEL. Oftmals erkennen sie sich. Und wenn dir in einer Notlage jemand hilfreich die Hand reicht, könnte dies ein SIRIUS-ENGEL gewesen sein.</p>
+      <p>SIRIUSENGEL sind humorvoll und möchten mit witzigen Botschaften Spaß und Harmonie teilen. Es sind die Lieder, die du als Kind gerne gesungen hättest.</p>
+      <p>Auch dein Kind würde die Songs cool finden und mit Freude mitsingen. Und vielleicht bist auch du ein SIRIUS-ENGEL, du hast es bloß noch nicht gemerkt. Sei einfach dabei und fühle wie ein SIRIUS-ENGEL.</p>
+    </div>
+    <div class="scrapbook">
+      {{ m.polaroid('images/musik/cover-sirius-long.jpg', 'Gehn wir auf den Sirius') }}
+      {{ m.polaroid('images/musik/cover_wenn-engel.jpg', 'Wenn Engel über München fliegen') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Videos</h2></div>
+    <div class="video-grid">
+      {{ m.video('9-APYZlaQ3o', 'Wenn Engel über München fliegen', 'images/filmbilder/wenn-engel.jpg', 'Musikvideo', '… und in Salzburg rechts abbiegen,<br>um in Stuttgart dann zu landen,<br>haben sie nicht die A8 verstanden.') }}
+      {{ m.video('SE29ZMky6OQ', 'Gehn wir auf den Sirius – Radiomix', 'images/filmbilder/gehn-sirius-big.jpg', 'Musikvideo', 'Die Einladung zum Abflug') }}
+      {{ m.video('vEOZctA001g', 'Gehn wir auf den Sirius – Dance Mix', 'images/filmbilder/sirius-mix-big.jpg', 'Musikvideo', 'Sirius Long Dance Mix') }}
+      {{ m.video('amw1eZBZJq0', 'Ballade 2012 – Vollversion', 'images/filmbilder/2012-long.jpg', 'Musikvideo', 'Hier erfahrt Ihr die ganze Geschichte mit vollem Text! Endlich eine wirklich fröhliche Ballade zum Weltuntergang 2012!') }}
+      {{ m.video('kUG1sFMgqLs', 'Ballade 2012 – Radiomix', 'images/filmbilder/2012.jpg', 'Musikvideo', 'Video in cosmic style') }}
+      {{ m.video('69aaU-P8S2Y', 'Making of Ballade 2012', 'images/filmbilder/making-of.jpg', 'Video-Doku', 'Szenen bei der Produktion') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Songs anhören</h2><p>Die Player werden erst nach Klick geladen (instantlicensing.com).</p></div>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3>Kids Einschlaflied – Gehn wir auf den Sirius</h3>
+        <p class="muted">(Min. 0:52) Das Gute-Nacht-Lied. Die sehr kurze Einschlaf-Geschichte für Dein Kind.</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/kids-einschlaflied-gehn-wir-auf-den-sirius-1122640', 'Kids Einschlaflied', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+      <div class="card">
+        <h3>Gehn wir auf den Sirius – Radio-Version</h3>
+        <p class="muted">(Min. 4:31) Fun-Song für die ganze Familie. {{ m.yt_link('SE29ZMky6OQ', 'Video hier') }}</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/gehn-wir-auf-den-sirius-radio-version-sirius-engel-1122643', 'Gehn wir auf den Sirius – Radio-Version', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+      <div class="card">
+        <h3>Gehn wir auf den Sirius – Dance Mix Long Version</h3>
+        <p class="muted">(Min. 9:22) Version „Sonne!“ Langer Ethno-Mix, viel Groove, wenig Text. {{ m.yt_link('vEOZctA001g', 'Video hier') }}</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/long-dance-mix-sonne-gehn-wir-auf-den-sirius-sirius-engel-1122644', 'Dance Mix Long Version', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+      <div class="card">
+        <h3>Wenn Engel über München fliegen</h3>
+        <p class="muted">(Min. 3:45) Lustiger Song über Engel, die sich verfliegen :-) Zum Tanzen und Mitsingen. {{ m.yt_link('9-APYZlaQ3o', 'Video hier') }}</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/wenn-engel-uber-munchen-fliegen-sirius-engel-1241435', 'Wenn Engel über München fliegen', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+      <div class="card">
+        <h3>Ballade 2012 – Radio-Version</h3>
+        <p class="muted">(4:11) Fun-Song mit der Geschichte, warum die Welt 2012 nicht untergeht. {{ m.yt_link('kUG1sFMgqLs', 'Video hier') }}</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/ballade-2012-radio-version-sirius-engel-1122641', 'Ballade 2012 – Radio-Version', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+      <div class="card">
+        <h3>Ballade 2012 – Volltext-Version long</h3>
+        <p class="muted">(7:34) Hier erfahrt Ihr die ganze Geschichte mit vollem Text! Endlich eine wirklich fröhliche Ballade zum Weltuntergang 2012! {{ m.yt_link('amw1eZBZJq0', 'Video hier') }}</p>
+        {{ m.lazy_embed('https://music.instantlicensing.com/embed/ballade-2012-vollversion-sirius-engel-1122642', 'Ballade 2012 – Vollversion', '200', 'Player laden', 'instantlicensing.com') }}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
