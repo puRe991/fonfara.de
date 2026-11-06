@@ -1,0 +1,4 @@
+# Audio-Archiv (ca. 245 MB) liegt auf dem Webserver, nicht im Repository
+*.mp3
+.audio-keep/
+__pycache__/

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set recipes = load_json('recipes.json') %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Aus der Sammlung von Frau Kächele &amp; Frau Peters</p>
+    <h1>Hefezopf-Rezepte</h1>
+    <p class="lead">Original Hefezopf-Rezepte – eingesandt von unseren Fans. Manche Rezepte sind sich sehr ähnlich, testen musst Du sie selbst.</p>
+  </div>
+  <div class="page-hero__art">{{ m.img('images/kp/elements2/hefezopf.gif', 'Hefezopf', '', 'eager', 'mix-blend-mode:multiply') }}</div>
+</section>
+
+<nav class="wrap anchor-offset" id="hefe" aria-label="Rezept-Übersicht">
+  <div class="card">
+    <p class="eyebrow">Übersicht</p>
+    <ol class="clean" style="columns: 2 260px; column-gap: 32px">
+      {% for r in recipes %}
+      <li style="padding:4px 0;break-inside:avoid"><span class="track__no">{{ r.no }}</span> <a href="#{{ r.anchor }}">{{ r.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </div>
+</nav>
+
+<section class="section--tight">
+  <div class="wrap">
+    {% for r in recipes %}
+    <article class="recipe anchor-offset" id="{{ r.anchor }}">
+      <div>
+        <div class="recipe__no">{{ r.no }}</div>
+        <h2 style="font-size:1.6rem" class="mt-1">{{ r.title }}</h2>
+        <p class="recipe__by">{{ r.by }}{% if r.get('source') %} · <a href="{{ r.source }}" target="_blank" rel="noopener">Quelle</a>{% endif %}</p>
+        {% if r.ingredients %}
+        <ul>
+          {% for i in r.ingredients %}
+          {% if i in ['Zutaten', 'Zutaten:'] %}{% elif i.endswith(':') %}<li class="sub">{{ i }}</li>{% else %}<li>{{ i }}</li>{% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div>
+        {% for s in r.steps %}<p>{{ s }}</p>{% endfor %}
+        {% if r.get('poem') %}<div class="poem callout callout--soft">{{ r.poem|join('\n') }}</div>{% endif %}
+        {% if r.get('note') %}<div class="note">{{ r.note }}</div>{% endif %}
+        <p class="small mt-1"><a href="#hefe">↑ zur Übersicht</a></p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--sun">
+  <div class="wrap center">
+    <p class="lead" style="margin-inline:auto">Diese Rezeptsammlung ist eine Hefezopf-Aktion der wilden Hefezopf-Weiber Frau Kächele &amp; Frau Peters von SDR3.</p>
+    <p class="small" style="color:inherit">Copyright: Frau Kächele &amp; Frau Peters mit allen Seiten-Inhalten © by Teflon Fonfara · GEMA: Text/Musik by Teflon Fonfara · www.frau-kaechele.de</p>
+  </div>
+</section>
+{% endblock %}

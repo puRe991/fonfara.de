@@ -1,0 +1,626 @@
+[
+ {
+  "title": "Geschehen und Erfindungen im Alltag",
+  "anchor": "start",
+  "items": [
+   {
+    "title": "Alternative Zeitansage",
+    "file": "ansage.mp3",
+    "desc": "Frau Peters möchte bei der Telekom die Zeitansage machen."
+   },
+   {
+    "title": "Zeppelinflug",
+    "file": "Zeppelinflug.mp3",
+    "desc": "Mit Hochgeschwindigkeit durchs Ländle ins Wohnzimmer."
+   },
+   {
+    "title": "Atomgitarre",
+    "file": "atomgitarre.mp3",
+    "desc": "Frau Kächele führt eine atombetriebene Gitarre vor."
+   },
+   {
+    "title": "Busengrabscher",
+    "file": "Busengrapscher.mp3",
+    "desc": "Die Lebenshilfe gegen Busengrabscher."
+   },
+   {
+    "title": "Busenlift",
+    "file": "Busenlift.mp3",
+    "desc": "Erfindung gegen schlaffen Busen."
+   },
+   {
+    "title": "Busenventilator",
+    "file": "Busenventilator.mp3",
+    "desc": "Mit kühlem Busen ist gut schmusen."
+   },
+   {
+    "title": "Frau Kächeles Deutschlandlied",
+    "file": "deutschland.mp3",
+    "desc": "Mit dem Hefezopf durch Deutschland."
+   },
+   {
+    "title": "Faxgerät",
+    "file": "Fax-Geraet.mp3",
+    "desc": "Das Fax vom Zoll."
+   },
+   {
+    "title": "Fernsehstudio",
+    "file": "Fernsehstudio.mp3",
+    "desc": "Frau Kächele spricht die Tagesschau."
+   },
+   {
+    "title": "Friedensdemo",
+    "file": "Friedens-Demo.mp3",
+    "desc": "Frau Kächele verwechselt die Demo."
+   },
+   {
+    "title": "Geschlechtsumwandlung",
+    "file": "Geschlechtsumwandlung.mp3",
+    "desc": "Frau Kächele & Frau Peters werden Männer."
+   },
+   {
+    "title": "Goldgräber",
+    "file": "Goldgraeber.mp3",
+    "desc": "Frau Kächele & Frau Peters bohren nach Gold."
+   },
+   {
+    "title": "Grabkammer",
+    "file": "Grabkammer.mp3",
+    "desc": "Die Damen finden eine Grabkammer im Keller."
+   },
+   {
+    "title": "Handy",
+    "file": "Handy.mp3",
+    "desc": "Frau Peters verstrahlt mit dem Handy ihren Popo."
+   },
+   {
+    "title": "Handy-Vögel",
+    "file": "Handy-Voegel.mp3",
+    "desc": "Der Telekom-Schellenbaum-Hüpfer und die Faxstelze."
+   },
+   {
+    "title": "Haschischbaum",
+    "file": "Haschischbaum.mp3",
+    "desc": "Die Einstiegsdroge in echt."
+   },
+   {
+    "title": "Hefezopf-Auto",
+    "file": "Hefezopf-Auto.mp3",
+    "desc": "Nach dem Unfall wird alles ökomäßig aufgegessen."
+   },
+   {
+    "title": "Herr Kobbermann",
+    "file": "herr-kobbermann.mp3",
+    "desc": "Unterirdisch unterwegs zur Brauerei und zur Tankstelle"
+   },
+   {
+    "title": "Herzklappen",
+    "file": "Herzklappen.mp3",
+    "desc": "Die neue Geschäftsidee."
+   },
+   {
+    "title": "Kloorgel",
+    "file": "kloorgel.mp3",
+    "desc": "Digitales Klangschüssel-Ereignis im atonalen Ultrascheißhaus."
+   },
+   {
+    "title": "Klopapiermaschine",
+    "file": "kloorgel.mp3",
+    "desc": "Digitales Klangschüssel-Ereignis im atonalen Ultrascheißhaus."
+   },
+   {
+    "title": "Knall-Joint",
+    "file": "knall-joint.mp3",
+    "desc": "Als Geschenk eine Handgranate."
+   },
+   {
+    "title": "Kosmisches Fax",
+    "file": "kosmisches_fax.mp3",
+    "desc": "In den Himmel und in die Hölle faxen."
+   },
+   {
+    "title": "Kruzefixverbot",
+    "file": "kruzverbot.mp3",
+    "desc": "Öffentliche Räume: INRY oder Van Morrison?"
+   },
+   {
+    "title": "Landes-Show",
+    "file": "Landes-Show.mp3",
+    "desc": "Frau Kächele als Moderatorin."
+   },
+   {
+    "title": "Marmorkuchen immer bricht",
+    "file": "marmorkuchen.mp3",
+    "desc": "Songabwandlung von \"Marmor, Stein und Eisen bricht\"."
+   },
+   {
+    "title": "Martinsballade",
+    "file": "Martinsballade.mp3",
+    "desc": "Song über St. Martin."
+   },
+   {
+    "title": "Maultaschenwickler",
+    "file": "Maultaschenwickler.mp3",
+    "desc": "Vorführung der neuen Erfindung."
+   },
+   {
+    "title": "Castor-Anzug",
+    "file": "castor-anzug.mp3",
+    "desc": "Brennstäbe werden ausgeliefert."
+   },
+   {
+    "title": "Menschen-Dublikat",
+    "file": "menschen-dublikat.mp3",
+    "desc": "Der Genenverdoppler."
+   },
+   {
+    "title": "Motorradhelm",
+    "file": "Motorradhelm.mp3",
+    "desc": "Der Schädelschutz mit dem Zement-Hefezopf."
+   },
+   {
+    "title": "Multi-Vitamin",
+    "file": "Multi-Vitamin.mp3",
+    "desc": "Das Tablettle von der Gosch zur Speiseröhre und in den Darm."
+   },
+   {
+    "title": "Nesenbach-Duo",
+    "file": "Nesenbach-Duo.mp3",
+    "desc": "Die plötzliche Performance."
+   },
+   {
+    "title": "Päpstin Kächele",
+    "file": "Paepstin-Kaechele.mp3",
+    "desc": "Der Glaube kommt per Hefezopf."
+   },
+   {
+    "title": "Piercing",
+    "file": "Piercing.mp3",
+    "desc": "Die Nippelkette mit Busenglocke"
+   },
+   {
+    "title": "Pigment-Zentrifuge",
+    "file": "Pigment-Zentrifuge.mp3",
+    "desc": "Frau Peters steckt ihre Nase in die Zentrifuge."
+   },
+   {
+    "title": "Wellblechhopfer",
+    "file": "Wellblechhopfer.mp3",
+    "desc": "Seltenes Tiere im Liebesmanipulator."
+   },
+   {
+    "title": "Rosinenbomber",
+    "file": "Rosinenbomber.mp3",
+    "desc": "Zebeben in den Hefezopf und Reisnägel gegen Einbrecher."
+   },
+   {
+    "title": "Runzelschaber",
+    "file": "Runzelschaber.mp3",
+    "desc": "Gesichtspflege mikroskopisch genau. Alles strahlt."
+   },
+   {
+    "title": "Simultansprecherin",
+    "file": "simultansprecherin.mp3",
+    "desc": "Frau Peters übersetzt von schwäbisch in deutsch."
+   },
+   {
+    "title": "Tango-Kurs",
+    "file": "Tango-Kurs.mp3",
+    "desc": "Frau Peters im Schnellkurs per Hypnose."
+   },
+   {
+    "title": "Turbo-Backblech",
+    "file": "Turbo-Backblech.mp3",
+    "desc": "Per Turbo-Maschine zum Back-Song."
+   },
+   {
+    "title": "Loriot zu Gast",
+    "file": "loriot-zu-gast.mp3",
+    "desc": "Prominenter Besuch kommt zum Hefezopf essen."
+   },
+   {
+    "title": "Stimmenwunder",
+    "file": "stimmwunder.mp3",
+    "desc": "Beide Damen sind heißer, aber die Tablette hilft."
+   },
+   {
+    "title": "Zahnplombenpflege",
+    "file": "Zahnplombenpflege.mp3",
+    "desc": "Frau Peters verschluckt den Massagestab."
+   },
+   {
+    "title": "Zahnsteinmikroskop",
+    "file": "Zahnsteinmikroskop.mp3",
+    "desc": "Frau Peters sieht in Frau Kächeles Gosch den Karieskraxler und findet Gold."
+   },
+   {
+    "title": "Zeituhr",
+    "file": "Zeituhr.mp3",
+    "desc": "Nach dem Ticken knallt es."
+   },
+   {
+    "title": "Greenpeace Atoll-Urlaub",
+    "file": "atoll-urlaub.mp3",
+    "desc": "Der Urlaub mit Atomschutz"
+   }
+  ]
+ },
+ {
+  "title": "Kehrwoche",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Kehrwochen-Symphonie",
+    "file": "kehrwochensymphonie.mp3",
+    "desc": "Die Damen hören sich ein modernes Werk an, Frau Peters ist empört."
+   },
+   {
+    "title": "Trottwar-Reiniger",
+    "file": "Trottwar-Reiniger.mp3",
+    "desc": "Reinigungsmittel reinigt bis Neuseeland."
+   },
+   {
+    "title": "Chinesische Kehrwoche",
+    "file": "chinesische-kehrwoche.mp3",
+    "desc": "Kulturprogramm für China. Im Beat der Zeit."
+   },
+   {
+    "title": "Schwäbische Raga",
+    "file": "schwaebische-raga.mp3",
+    "desc": "Einkaufen, Kehrwoche etc. im indischen Klang."
+   },
+   {
+    "title": "April-Kehrwoche",
+    "file": "april-kehrwoche.mp3",
+    "desc": "Reinigungs-Aggregat für jedes Wetter."
+   },
+   {
+    "title": "Letz Putz",
+    "file": "letz-putz.mp3",
+    "desc": "OB Schuster lässt die Bürger putzen, dazu der Song."
+   },
+   {
+    "title": "Schuster-Puppe",
+    "file": "schuster-puppe.mp3",
+    "desc": "Das Gescheck: Die sprechende OB-Schuster-Puppe."
+   }
+  ]
+ },
+ {
+  "title": "Fasching & Karneval",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Faschingsaggregat",
+    "file": "faschingsaggregat.mp3",
+    "desc": "So wird Fasching hergestellt."
+   },
+   {
+    "title": "Tusch-Maschine",
+    "file": "tusch-maschine.mp3",
+    "desc": "Frau Kächele hält die Büttenrede und Frau Peters drückt den Tuschknopf."
+   },
+   {
+    "title": "Faschingskurbel",
+    "file": "Faschingskurbel.mp3",
+    "desc": "Mit der Kurbel wird die Stimmung hergestellt."
+   },
+   {
+    "title": "Büttenrede 1",
+    "file": "buett1.mp3",
+    "desc": "Der Hefezopf im Karneval"
+   },
+   {
+    "title": "Büttenrede 2",
+    "file": "buett2.mp3",
+    "desc": "Beide Damen in der Bütt."
+   }
+  ]
+ },
+ {
+  "title": "Esoterik",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Esoterik-Kurs",
+    "file": "Esoterik-Kurs.mp3",
+    "desc": "Ausserkörperliche Erfahrung"
+   },
+   {
+    "title": "Sonnwendfeuer",
+    "file": "sonnwendfeuer.mp3",
+    "desc": "Die Stube brennt, Feuer ist auch nur ein Element."
+   },
+   {
+    "title": "Hexenmix",
+    "file": "Hexenmix.mp3",
+    "desc": "Der Flug zum Blocksberg."
+   },
+   {
+    "title": "Hellsehen",
+    "file": "Hellsehen.mp3",
+    "desc": "Frau Kächele hat die Lichtschranke übertreten."
+   },
+   {
+    "title": "Regenmacherkurs",
+    "file": "regenmacherkurs.mp3",
+    "desc": "Frau Kächele stellt Regen her."
+   },
+   {
+    "title": "Seelenfoto",
+    "file": "Seelenfoto.mp3",
+    "desc": "Frau Kächele gibt psychische Beratung mit Fotoservice."
+   },
+   {
+    "title": "Walpurgis-Rennen",
+    "file": "Walpurgis-Rennen.mp3",
+    "desc": "Der Flug zum Blocksberg, doch der Besen zerbricht."
+   },
+   {
+    "title": "Dimensionsrutschbahn",
+    "file": "dimensionsrutschbahn.mp3",
+    "desc": "Der Blick ins Jenseits."
+   },
+   {
+    "title": "Traumdeutungsbüro",
+    "file": "Traumdeutungsbuero.mp3",
+    "desc": "Hohe Gebühren im Trancezustand."
+   },
+   {
+    "title": "TV-Jenseits",
+    "file": "tv-jenseits.mp3",
+    "desc": "Der tote Kanal bringt die Botschaft."
+   },
+   {
+    "title": "Sylvester-Quantenkracher",
+    "file": "Sylvester-Quantenkracher.mp3",
+    "desc": "Frau Kächele multipliziert Raum & Zeit."
+   }
+  ]
+ },
+ {
+  "title": "Erotik",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Dino-Sex",
+    "file": "Dino-Sex.mp3",
+    "desc": "Mit einem Hefezöpfle beim Sex zuschauen."
+   },
+   {
+    "title": "Sex am Arbeitsplatz",
+    "file": "Sex_am_Arbeitsplatz.mp3",
+    "desc": "Die Kehrwoche und die Küche ist voller Phallussymbole."
+   },
+   {
+    "title": "Erotik-Versand",
+    "file": "Erotik-Versand.mp3",
+    "desc": "Der Elefant mit dem Naturdildo."
+   },
+   {
+    "title": "Begleitservice",
+    "file": "Begleitservice.mp3",
+    "desc": "Frau Kächele hat zum musizieren einen Begleitservice bestellt."
+   },
+   {
+    "title": "Kellerassel-Sex",
+    "file": "Kellerassel-Sex.mp3",
+    "desc": "Die Forschung über die Fortpflanzung."
+   },
+   {
+    "title": "Porno-Szene",
+    "file": "Porno-Szene.mp3",
+    "desc": "Nymphomanie & Hefezopf, ein Drama."
+   },
+   {
+    "title": "One Night Stand",
+    "file": "one-night-stand.mp3",
+    "desc": "Briefmarkenstanzgerät im Stenz."
+   },
+   {
+    "title": "Sex am Telefon",
+    "file": "sex-am-telefon.mp3",
+    "desc": "Frau Peters testet die Hotline."
+   }
+  ]
+ },
+ {
+  "title": "Weihnachtliches",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Adventsvibrato",
+    "file": "adventsvibrato.mp3",
+    "desc": "Das neue Gerät für den Advent und für den Körper."
+   },
+   {
+    "title": "Christkindle",
+    "file": "Christkindle.mp3",
+    "desc": "Weihnachtliche Fröhlichkeit mit dem künstlichen Christkindle."
+   },
+   {
+    "title": "Krippenspiel",
+    "file": "krippspiel.mp3",
+    "desc": "Weihnachts-Aufführung im Wohnzimmer."
+   },
+   {
+    "title": "Neues Weihnachtslied",
+    "file": "neues-weihnachtslied.mp3",
+    "desc": "Vorweihnachtsstress mit Fahrerflucht per Fahrrad.."
+   },
+   {
+    "title": "Nikolaus-Peitsche",
+    "file": "Nikolaus-Peitsche.mp3",
+    "desc": "Bestrafung mit Nikolaus-Spaß."
+   },
+   {
+    "title": "Weihnachtskrippe",
+    "file": "weihnachtskrippe.mp3",
+    "desc": "High Tech Performance einer Weihnachtsszene."
+   },
+   {
+    "title": "Stahlchristbaum",
+    "file": "stahlchristbaum.mp3",
+    "desc": "Hochmoderne Krupp-Edeltanne mit Krippenzentrifuge."
+   },
+   {
+    "title": "Weihnachtsbescherung",
+    "file": "weihnachtsbescherung.mp3",
+    "desc": "Hochwertige Geschenke aus luftiger Höhe."
+   }
+  ]
+ },
+ {
+  "title": "Umwelt & Klima",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Klimagipfel und die Weltmusik",
+    "file": "klimagipfel-weltmusik.mp3",
+    "desc": "Die Damen hören in die Welt hinein."
+   },
+   {
+    "title": "Welttemperatur",
+    "file": "welttemperatur.mp3",
+    "desc": "Überdosierung des homöophatischen Kühlmittels."
+   },
+   {
+    "title": "Weltklimaanlage",
+    "file": "weltklimaanlage-0.mp3",
+    "desc": "Das neue Gerät bläst die Landschaft weg."
+   },
+   {
+    "title": "Weltklima & Butterkeks",
+    "file": "butterkeks.mp3",
+    "desc": "Alles schmilzt und zurück bleibt ein Butterkeks."
+   },
+   {
+    "title": "Weltklima-Verschiebung",
+    "file": "klimaverschiebung.mp3",
+    "desc": "Eisberge drücken ins Wohnzimmer und verschieben den Grundriss."
+   },
+   {
+    "title": "Welt-Klima-Konferenz",
+    "file": "welt-klima-konferenz.mp3",
+    "desc": "Frau Kächeles Rede als Vertreterin von Baden-Württemberg"
+   },
+   {
+    "title": "Bedrohte Tiere",
+    "file": "bedrohte-tiere.mp3",
+    "desc": "Alles wird von allem bedroht, besonders im Terrarium."
+   }
+  ]
+ },
+ {
+  "title": "Songs mit Frau Kächele & Frau Peters: Volksmusik - Rock - Techno",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Der Hefezopf schmeckt geil",
+    "file": "Hefezopf_schmeckt_geil.mp3",
+    "desc": "Techno-Hymne über den Hefezopf."
+   },
+   {
+    "title": "Klinsi we love you - Schwabemmix",
+    "file": "Klinsi_we_love_you-Schwabenmix.mp3",
+    "desc": "Offizieller Song der Damen zur Fussball-WM 2008."
+   },
+   {
+    "title": "Klinsi we love you - Long Version",
+    "file": "Klinsi_we_love_you-Klinsi-Dance-Mix.mp3",
+    "desc": "Song: Lange Mixversion des WM-Songs."
+   },
+   {
+    "title": "Smoke überm Backherd",
+    "file": "Smoke-ueberm-Backherd.mp3",
+    "desc": "Song: Schwäbische Version aus \"Smoke on the water\"."
+   },
+   {
+    "title": "Das Haus ist geil",
+    "file": "Das_House_ist_geil.mp3",
+    "desc": "Song: Mir gehn ins House. Mir hen nur ois im Kopf - dr Hefezopf.."
+   },
+   {
+    "title": "Unser Radiosender",
+    "file": "Unser_Radiosender.mp3",
+    "desc": "Song: Der beste Sender und der Exhibitionist kriegt eine Prothese."
+   },
+   {
+    "title": "Der einsame Dildo",
+    "file": "Der_einsame_Dildo.mp3",
+    "desc": "Techno: Es liegt ein Dildo an dem Strand...."
+   },
+   {
+    "title": "Paule",
+    "file": "paule.mp3",
+    "desc": "Techno-Song über einen gewissen Paule in Rom."
+   },
+   {
+    "title": "Die Hausfrau ist ein Arbeitstier",
+    "file": "Die-Hausfrau-ist-ein-Arbeitstier.mp3",
+    "desc": "Song: Fun für die Hausfrau (Live-Charakter)"
+   },
+   {
+    "title": "Der Briefträger kommt ins Haus",
+    "file": "brieftraeger.mp3",
+    "desc": "Song: Erotisches vom Postboten."
+   },
+   {
+    "title": "Hansi in Amerika",
+    "file": "Hansi-in-Amerika.mp3",
+    "desc": "Song: Geschichten eines Auswanderers."
+   },
+   {
+    "title": "Papa ist ein Frauenheld",
+    "file": "papa-ist-ein-frauenheld.mp3",
+    "desc": "Song: ... ein Frauenheld? - Wenn's Toupee am Schädel hält."
+   },
+   {
+    "title": "Wäsch Dir auch den Krattel",
+    "file": "Waesch-Dir-auch-den-Krattel.mp3",
+    "desc": "Song: Die Reinlichkeit der schwäbischen Hausfrau. (Live-Charakter)"
+   },
+   {
+    "title": "Ich tät so gern ein Wunder erleben",
+    "file": "Ich-taet-so-gern-ein-Wunder-erleben.mp3",
+    "desc": "Song: Die Wünsche der schwäbischen Hausfrau."
+   },
+   {
+    "title": "Sex in Baden-Württemberg",
+    "file": "sex-in-bawue.mp3",
+    "desc": "Song: Eine Kulturbeschreibung."
+   },
+   {
+    "title": "Der Moscht wird warm",
+    "file": "moscht.mp3",
+    "desc": "Volksmusik - Schunkelsong für Moschttrinker."
+   },
+   {
+    "title": "Baby Baby, das ist die Weihnachtszeit",
+    "file": "baby-baby-das-ist-die-weihnachtszeit.mp3",
+    "desc": "Weihnachtslied mit Groove: Weihnachten da sind wir breit."
+   },
+   {
+    "title": "Schwabenpunk",
+    "file": "schwabenpunk.mp3",
+    "desc": "Der Klassiker von der 1. LP (1989)."
+   }
+  ]
+ },
+ {
+  "title": "Die legendäre Sendung vom verbogenen Fernsehturm",
+  "anchor": null,
+  "items": [
+   {
+    "title": "Der verbogene Fernsehturm Jubiläumssendung 1989",
+    "file": "jubilaeumsshow-1989-hi.mp3",
+    "desc": "Die legendäre Sendung: Die Damen jagen Uri Geiler. Siehe auch Folgesendung."
+   },
+   {
+    "title": "Auswirking der SDR-Jubiläumsshow (Folgesendung)",
+    "file": "auswirkung-1989-hi.mp3",
+    "desc": "Wegen der Kächele-Peters-Jubiläumsshow gab es Chaos in Degerloch und die Polizei war im Einsatz. Hier die ganze Wahrheit (Sendung nächsten Tag)."
+   }
+  ]
+ }
+]

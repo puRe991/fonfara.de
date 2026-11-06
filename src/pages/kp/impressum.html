@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('Frau Kächele & Frau Peters', 'Impressum') }}
+<section class="section--tight">
+  <div class="wrap wrap--narrow">
+    <h2 style="font-size:1.5rem">Idee und Ausführung</h2>
+    <p class="lead">„Frau Kächele &amp; Frau Peters“ ist eine Erfindung von Teflon Fonfara.</p>
+    <p>Kopie, Druck, Weitergabe, Veröffentlichung, Vervielfältigung oder jegliche andere Nutzung von Inhalten dieses Webportals ist auch auszugsweise nicht gestattet und unterliegt dem Urheberrecht. Alle Inhalte geschützt.<br>© Copyright by Teflon Fonfara<br>Alle Titel GEMA Text/Musik: Teflon Fonfara</p>
+    <div class="table-wrap mt-2">
+      <table class="info">
+        <tr><th>Kontakt</th><td>Projekt Frau Kächele &amp; Frau Peters<br>Teflon Fonfara<br>Filderstr. 19, 70180 Stuttgart</td></tr>
+        <tr><th>Verantwortlich für den Inhalt</th><td>Teflon Fonfara<br>Für Inhalte von fremden Links kann trotz sorgfältiger Überprüfung keine Verantwortung übernommen werden.</td></tr>
+        <tr><th>Telefon</th><td><a href="tel:+497116405308">+49 (0)711 – 640 53 08</a></td></tr>
+        <tr><th>Mail</th><td><a href="mailto:teflon@fonfara.de">teflon@fonfara.de</a></td></tr>
+        <tr><th>Frau Kächele &amp; Frau Peters URLs</th><td><a href="http://www.frau-kaechele.de">www.frau-kaechele.de</a><br><a href="http://www.fraukaechele.de">www.fraukaechele.de</a></td></tr>
+        <tr><th>Homepage Teflon Fonfara</th><td><a href="{{ root }}index.html">www.fonfara.de</a></td></tr>
+        <tr><th>USt-IdNr.</th><td>DE147451965</td></tr>
+        <tr><th>Produkte</th><td>„Frau Kächele &amp; Frau Peters“-CDs sind erschienen bei TUKAN Musikverlag und TUCAN Records, Kornwestheim.<br>Die LP „Die total schrille Comic Show“ ist erschienen bei Hammer Musik, Stuttgart/Hamburg.<br>„Hefezopf-Power“ / Das Original Text-Buch ist erschienen bei Gatzanis Verlag Stuttgart.</td></tr>
+      </table>
+    </div>
+    <p class="mt-2"><a class="btn btn--ghost" href="{{ root }}impressum.html#datenschutz">Datenschutzerklärung hier</a></p>
+  </div>
+</section>
+{% endblock %}

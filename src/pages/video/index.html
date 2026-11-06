@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set F = 'images/filmbilder/' %}
+{% block content %}
+{{ m.page_hero('Film & Video', 'Videos aus Musik, TV, Doku, Comedy', 'Musikvideos, TV-Auftritte und Dokus aus fünf Jahrzehnten, Live-Musik mit ASIAN STARS, Comedy mit Frau Kächele & Frau Peters und Werbetrailer.') }}
+
+<nav class="wrap" aria-label="Gehe direkt">
+  <div class="chips">
+    <a href="#tv">TV · Film · Doku · Musik</a>
+    <a href="#tvdoku">TV Doku</a>
+    <a href="#musiklive">Musik Live</a>
+    <a href="#tvcomedy">TV Comedy</a>
+    <a href="#comedy">Comedy live</a>
+    <a href="#werbung">Werbetrailer</a>
+  </div>
+  <div class="mt-1">{{ m.privacy_note() }}</div>
+</nav>
+
+<section class="section anchor-offset" id="tv">
+  <div class="wrap">
+    <div class="section-head"><h2>Musikvideo · TV</h2></div>
+    <div class="video-grid">
+      {{ m.video('13Vq_wIxrdA', 'Du elektrisierst mich (Das Girl aus Prag)', F~'prag.jpg', 'Aktuell', 'Musik-Comedy.') }}
+      {{ m.video('r5Ogfc5p2oA', 'Der Sommer kommt.', F~'sommer_kommt.jpg', 'Music Comedy', 'Im Beat des Büstenhalters.') }}
+      {{ m.video('xX2BZ5u0hxs', 'The Länd. The Song. Die Satire.', F~'titel-laend.jpg', 'Satire', 'Comedy zum baden-württembergischen Image-Projekt „The Länd“.') }}
+      {{ m.video('5FzBQgFSPwo', 'Der neue Bahnhof isch fertig', F~'bahnhofstrailer.jpg', 'Aktuell', 'Trailer für das Hörspiel. Download <a href="https://www.hoebu.de/frau-kaechele-frau-peters-der-neue-bahnhof-isch-fertig-teflon-fo-995064" target="_blank" rel="noopener">hier</a>.') }}
+      {{ m.video('vyRZHEMThPI', 'Fleischsalat Comedy', F~'hengstenberg2.jpg', 'Werbung pur', 'Humor als Verkaufsförderung. Die Influencer-Party.') }}
+      {{ m.video('eH85xP1iyKs', 'Die Spätzles-Klappe', F~'spaetzlesklappe.jpg', 'Schwäbischer Erfindungsgeist', 'Frau Kächele zeigt die wertvollste Erfindung für die Hausfrau.') }}
+      {{ m.video('ppLmiV-FldU', '25 Fragen an Teflon Fonfara', F~'25-fragen.jpg', 'Umfrage') }}
+      {{ m.video('BT88SRbMZVU', 'Wer ist Teflon Fonfara?', F~'filmbild-5.jpg', 'Doku') }}
+      {{ m.video('ESiMxcSs_z0', 'Teflon Fonfara in SWR Landesschau', F~'swr-4.jpg', 'TV-Doku', 'Teflon Fonfara und Frau Kächele &amp; Frau Peters (2019).') }}
+      {{ m.video('k-ZC6tbjFhY', 'Heiko mit dem Bollenhut', F~'bollenhut2.jpg', 'Musik-Video', 'Mundart-Comedy: Eberhard Kächele singt vom Bollenhut. Mehr Videos von Eberhard Kächele gibts <a href="' ~ root ~ 'kp/video.html">hier</a>.') }}
+      {{ m.video('u6NDENYIpwg', 'Vegane Kuttla', F~'kuttla.jpg', 'Musik-Video', 'Mundart-Comedy: Eberhard Kächele singt vom veganen Essen seiner Frau. Mehr Videos von Eberhard Kächele gibts <a href="' ~ root ~ 'kp/video.html">hier</a>.') }}
+      {{ m.video('T22yezRVaKw', 'Der Briefträger kommt ins Haus', F~'kp-video-intro.jpg', 'Mundart Comedy Musikvideo', 'Frau Kächele &amp; Frau Peters. Schwäbische Mundart. <a href="' ~ root ~ 'kp/video.html">Mehr Videos mit Frau Kächele &amp; Frau Peters hier …</a>') }}
+      {{ m.video('Zye2vf2K-40', 'Xsälzbrot & Hefezopf', F~'xsaelzbrot-hefezopf.jpg', 'Humor', 'Handgezeichneter Animationsfilm mit Frau Kächele &amp; Frau Peters. Info <a href="' ~ root ~ 'kp/index.html">Frau Kächele &amp; Frau Peters</a>.') }}
+      {{ m.video('9tq7wD9Dc1A', 'Warum sind E-Gitarren erotisch?', F~'erotik-guitar.jpg', 'Humor', 'Handgezeichneter Animationsfilm.') }}
+      {{ m.video('CkCIM0cCJXM', 'Extreme Guitar Players', F~'guitarists.jpg', 'Musikvideo', 'Zwei Gitarristen aus unterschiedlichen Genres begegnen sich und präsentieren ihre Gitarrenkunst. Handgezeichneter Animationsfilm.') }}
+      {{ m.video('9-APYZlaQ3o', 'Wenn Engel über München fliegen', F~'wenn-engel.jpg', 'Musikvideo', 'und in Salzburg rechts abbiegen, um in Stuttgart dann zu landen, ham sie nicht die A8 verstanden. Info zum Projekt <a href="' ~ root ~ 'musik/siriusengel.html">SIRIUS-ENGEL</a>.') }}
+      {{ m.video('SE29ZMky6OQ', 'Gehn wir auf den Sirius (short version)', F~'gehn-sirius-big.jpg', 'Musikvideo', 'Ist es mit der Erde Schluss – gehn wir auf den Sirius. Fun-Song mit Sommer-Feelings und Goa-Dance. Info zum Projekt <a href="' ~ root ~ 'musik/siriusengel.html">SIRIUS-ENGEL</a>.') }}
+      {{ m.video('vEOZctA001g', 'Sonne Mond Sterne – Sirius Dance Mix Long', F~'sirius-mix-big.jpg', 'Musikvideo', '„Gehn wir auf den Sirius“ in der Long Version. Dies ist ein anderes Video zum Song: Viel Beat, viel Sun &amp; Dance, wenig Text, nur der Schrei nach Sonne! Ein bunter Bilderreigen!') }}
+      {{ m.video('kUG1sFMgqLs', 'Ballade 2012 (Radio Version)', F~'2012.jpg', 'Musikvideo', 'Fun-Video zum Weltuntergang. Prophezeiungen? Nostradamus? Mehr Info zum Projekt <a href="' ~ root ~ 'musik/siriusengel.html">SIRIUS-ENGEL</a>.') }}
+      {{ m.video('amw1eZBZJq0', 'Ballade 2012 long – Voll-Version', F~'2012-long.jpg', 'Musikvideo', 'Ein anderes Video zum Song in einer Komplettversion mit der jungen Darstellerin Antonia in genüsslicher Unterhaltung zum angeblichen Weltuntergang 2012.') }}
+      {{ m.video('69aaU-P8S2Y', 'Making of Ballade 2012', F~'making-of.jpg', 'Video-Doku', 'Witzige Szenen von der Herstellung des Videos Ballade 2012 mit der Darstellerin Antonia.') }}
+      {{ m.video('ADlx4Zo8Ey4', 'The Love Of A Saxophonist', F~'bass.jpg', 'Musikvideo', 'Fun-Video. Musik: 1990, Video: 2015, Schauspieler: Christian Gommel.') }}
+      {{ m.video('GnN0UMaywYE', 'Schwarze Wolken', F~'schwarze-wolken.jpg', 'Musikvideo', 'Offizielles Video mit Teflon Fonfara, feat. Luis Trenker, Rita Orlando Vocal. Mit Original-Szenen aus Trenker-Filmen, das Video wurde mit Luis Trenkers gleicher historischer Kamera nachgedreht (schwarz-weiß, 1994).', 'schwarze-wolken') }}
+      {{ m.video('qapDzSEeNYs', 'Schwarze Wolken (BR)', F~'alpen.jpg', 'TV-Doku', 'Film über Luis Trenker und den Techno-Titel „Schwarze Wolken“ in St. Ulrich. Ein Film des Bayerischen Fernsehens von Harold Woetzel 1994.', 'br') }}
+      {{ m.video('QM2km0sqj9c', 'Schwarze Wolken – live in Lampenfieber', F~'lampemnfieber.jpg', 'TV Performance', 'Rita &amp; Teflon live in Lampenfieber 1994.', 'la') }}
+      {{ m.video('O1YT9VlBzcI', 'US-TV-Show „New York Nights“', F~'ny.jpg', 'TV Performance', 'Vor vielen Jahren sagte jemand zu mir: Wenn Du mal in New York auftrittst, spiele bloß keinen normalen Gitarren-Stil. Das finden die New Yorker langweilig. Als ich später für meinen ersten US-Auftritt nach NY kam, erinnerte ich mich an diesen wichtigen Tipp. Dies war 1984.', 'ny') }}
+      {{ m.video('CrafHrEQ1Vc', 'Teflon & Luli mit Pop Avantgarde in New York', F~'ny-luli.jpg', 'TV Performance', 'Live in Coca Crystal’s TV Show. Hier ein Auftritt mit der japanischen Bassistin Luli am 23. Mai 1984. Aufgeführt wurden Klänge und Songs aus der LP „Inge in Venedig“.', 'ny2') }}
+      {{ m.video('roT86vkBF1A', 'Wie heißt ein Eisbär?', F~'berghoff.jpg', 'Musikvideo', 'Tagesschau-Song mit Dagmar Berghoff. Fun-Rap mit historischer Retro-Collage um Ex-Tagesschau-Sprecherin Dagmar Berghoff. Erstaufführung 1992.') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="tvdoku">
+  <div class="wrap">
+    <div class="section-head"><h2>TV Doku</h2></div>
+    <div class="video-grid">
+      {{ m.video('ry7mX-acX10', 'ARD-Portrait Teflon Fonfara (1997)', F~'ard-movie.jpg', 'TV Doku', 'Teflon Fonfara über die Kultfiguren Frau Kächele &amp; Frau Peters, er spricht und spielt beide Figuren für Radio und Fernsehen. Seine Meinung über Schwaben. Entspannung und Meditation, Humor, Harmonie und Heilung.') }}
+      {{ m.video('rKNmfciWQeo', 'Halleluja-Scratch – Portrait Teflon Fonfara (1986)', F~'swr1986.jpg', 'TV Doku', 'Weihnachts-Collage für Südwest Fernsehen „Adventskalender“.') }}
+      {{ m.video('KlX2n6rZ2z0', 'Teflon Fonfara & ORIGINALTON (1983)', F~'1983.jpg', 'TV Doku', 'Teflon Fonfara und seine Neue-Deutsche-Welle-Band ORIGINALTON. Südwest Fernsehen.', 'tv1') }}
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="musiklive">
+  <div class="wrap">
+    <div class="section-head"><h2>Musik Live</h2><a class="link-arrow" href="{{ root }}asianstars/index.html">Mehr über ASIAN STARS</a></div>
+    <div class="video-grid">
+      {{ m.video('_8rFahSoTC0', 'Sternenschlüssel (Clubconcert)', F~'sternenschluessel.jpg', 'Musik live', 'ASIAN STARS at Cafe Galao 2016.') }}
+      {{ m.video('7udqKWkE8vs', 'Elektro Suse (Clubconcert)', F~'electro-suse.jpg', 'Musik live', 'ASIAN STARS at Cafe Galao 2016.') }}
+      {{ m.video('_IhDfvde4FE', 'Planet Sinfonia', F~'planet-sinfonia.jpg', 'Musik live', 'ASIAN STARS at Musiknacht 2016.') }}
+      {{ m.video('DQUiFhxghS4', 'Quick Sand (Clubconcert)', F~'quick-sand.jpg', 'Musik live', 'ASIAN STARS at Cafe Galao 2016.') }}
+      {{ m.video('9zo4Nf8H9VE', "Jacob's Way", F~'jacobs-way.jpg', 'Musik live', 'ASIAN STARS at Musiknacht 2016.') }}
+      {{ m.video('FMMKSDhdwoE', 'Live at Goa-Party', F~'goaparty.jpg', 'Musik live', 'ASIAN STARS live Cafe Nil 2007.') }}
+      {{ m.video('2pwk6lxYnoA', 'Noisi', F~'noisi.jpg', 'Musik live', 'ASIAN STARS live 2009.') }}
+      {{ m.video('cnMe5xQnK1s', 'Echoes from Sirius', F~'echoes-from-sirius.jpg', 'Musik live', 'ASIAN STARS at Burg Hohen Neuffen 2007.') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="tvcomedy">
+  <div class="wrap">
+    <div class="section-head"><h2>TV Mix Comedy · Frau Kächele &amp; Frau Peters</h2></div>
+    {{ m.video('3jqO8ji850s', 'Gesamtfilm über Frau Kächele & Frau Peters (SDR, VIVA)', F~'kp.jpg', 'TV Doku-Mix', 'Szenen bei Stefan Raab. Der goldene Hefezopf zur Jubiläumsfeier im Stuttgarter Hauptbahnhof. Songs: „Der Briefträger kommt ins Haus“ und „Stuttgarter Nächte sind lang“. Der Minitrickfilm „Klinsi we love you“ zur Fußball-WM.', None, True) }}
+  </div>
+</section>
+
+<section class="section anchor-offset" id="comedy">
+  <div class="wrap">
+    <div class="section-head"><h2>Comedy live · Frau Kächele &amp; Frau Peters</h2><p>Info: <a href="{{ root }}kp/index.html">www.frau-kaechele.de</a></p></div>
+    <div class="video-grid">
+      {{ m.video('fVf-YPqAgG0', 'Kaugummi', F~'kaugummi.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer als Buchlesung getarnten One-Man-Show (Mundart).') }}
+      {{ m.video('frkqP-HtQTQ', 'Smoke überm Backherd', F~'smoke.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer One-Man-Show (Mundart).') }}
+      {{ m.video('bLgUj8mSuaY', 'Opel Vectra / Das Kehrwochenaggregat', F~'vectra.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer als Buchlesung getarnten One-Man-Show (Mundart).', 'vectra') }}
+      {{ m.video('t7FxfVdrg_0', 'Hendrix plays Dr. Schiwago', F~'dr-schiwago.jpg', 'Comedy live', '<em>Frau Kächele &amp; Frau Peters.</em> Teflon Fonfara in einer One-Man-Show (Mundart).', 'hendrix') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="werbung">
+  <div class="wrap">
+    <div class="section-head"><h2>Werbung</h2><a class="link-arrow" href="{{ root }}creativ/index.html">Humor in der Werbung</a></div>
+    <div class="video-grid">
+      {{ m.video('ADb7DYBqBnU', 'Der Rudolf hats gelesen.', F~'rudolf.jpg', 'Werbung', 'Köstlicher Kurztrailer zum Buch „Die Kraft der spirituellen Transformation“. Mehr zum <a href="' ~ root ~ 'buecher.html#transformation">Buch …</a>') }}
+      {{ m.video('Or-YykyBi5Y', 'Die Gitarren-Verschwörung', F~'gitarrenbuch-big.jpg', 'Werbung', 'Verschwiegene Geheimnisse eines Musikinstruments. Der Trailer zum Buch/eBook. Buch-Info <a href="' ~ root ~ 'buecher.html#gitarren">hier</a>.') }}
+    </div>
+  </div>
+</section>
+{% endblock %}

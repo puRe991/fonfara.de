@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set sections = load_json('player.json') %}
+{% set anchors = ['start', 'kehrwoche', 'fasching', 'esoterik', 'erotik', 'weihnachten', 'umwelt', 'songs', 'fernsehturm'] %}
+{% set legacy = ['start', '90', '15', '13', '11', '75', '81', '95', '113'] %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Anhören · Original aus SDR3</p>
+    <h1>Die wildesten Sketche und Songs</h1>
+    <p class="lead">Mit Frau Kächele &amp; Frau Peters: 94 Original-Folgen aus der Kultserie in SDR3 und 18 Songs (Volksmusik – Rock – Techno) – plus die legendäre Sendung vom verbogenen Stuttgarter Fernsehturm.</p>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('kp/player/kp-player2.jpg', 'Frau Kächele & Frau Peters', '', 'polaroid--tape') }}</div>
+</section>
+
+<nav class="wrap" aria-label="Themen">
+  <div class="card">
+    <p class="eyebrow">Links zu den Themen</p>
+    <div class="chips">
+      {% for s in sections %}<a href="#{{ anchors[loop.index0] }}">{{ s.title }} <span class="muted">({{ s['items']|length }})</span></a>{% endfor %}
+    </div>
+  </div>
+</nav>
+
+{% set ns = namespace(n=0, seen=[]) %}
+{% for s in sections %}
+<section class="section{% if loop.index is even %} section--paper2{% endif %} anchor-offset" id="{{ anchors[loop.index0] }}">
+  {% if legacy[loop.index0] != anchors[loop.index0] %}<span id="{{ legacy[loop.index0] }}" class="anchor-offset"></span>{% endif %}
+  <div class="wrap wrap--narrow">
+    <div class="section-head"><h2>{{ s.title }}</h2></div>
+    <div class="tracks">
+      {% for t in s['items'] %}
+      {% if t.file not in ns.seen %}
+      {% set ns.seen = ns.seen + [t.file] %}
+      {% set ns.n = ns.n + 1 %}
+      <div class="track" data-src="{{ t.file }}" data-title="{{ t.title|e }}">
+        <button class="track__btn" type="button" aria-label="Abspielen: {{ t.title|e }}">
+          <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+        </button>
+        <div>
+          <div class="track__title">{{ t.title }}</div>
+          <div class="track__desc">{{ t.desc }}</div>
+        </div>
+        <span class="track__no">{{ '%03d'|format(ns.n) }}</span>
+        <div class="track__progress" aria-hidden="true"><i></i></div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}
+
+{% block after %}
+<div class="player-bar" role="region" aria-label="Audio-Player">
+  <button class="ghost" type="button" data-act="prev" aria-label="Vorheriger Titel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5.5v13a1 1 0 0 1-1.5.86L9 12.86a1 1 0 0 1 0-1.72l9.5-6.5A1 1 0 0 1 20 5.5z"/></svg></button>
+  <button type="button" data-act="toggle" aria-label="Abspielen/Pause">
+    <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>
+    <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+  </button>
+  <button class="ghost" type="button" data-act="next" aria-label="Nächster Titel"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5.5v13a1 1 0 0 0 1.5.86L15 12.86a1 1 0 0 0 0-1.72L5.5 4.64A1 1 0 0 0 4 5.5z"/></svg></button>
+  <div class="player-bar__meta">
+    <div class="player-bar__title">–</div>
+    <div class="player-bar__time">0:00</div>
+    <div class="player-bar__seek"><i></i></div>
+  </div>
+</div>
+{% endblock %}

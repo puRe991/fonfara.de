@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set I = 'creativ/images/' %}
+{% block content %}
+{{ m.page_hero('Humorvolle Werbung', 'Das Werkbeispiel', 'In diesem Einzelbeispiel möchten wir den bunten Umfang von Möglichkeiten zeigen. Hier werden verschiedene Medien bedient in Bild, Wort und Ton, vom Firmenvideo bis zum Comic-Trailer.') }}
+
+<section class="section--tight">
+  <div class="wrap split">
+    <div class="card">
+      <p class="eyebrow">Die Vorgabe</p>
+      <h2 style="font-size:1.6rem">Die Komplett-Realisierung für einen Schuhhersteller.</h2>
+      <dl class="meta-list">
+        <dt>Unternehmen</dt><dd>Mittelständisches Familienunternehmen in dritter Generation, ca. 30 Angestellte</dd>
+        <dt>Produkt</dt><dd>Sportschuhe, Krabbelschuhe (Gesamtwaren 80 % für Kinder)</dd>
+        <dt>Zielgruppe</dt><dd>Männer, Frauen, Jugendliche, Kinder</dd>
+        <dt>Aufgabe</dt><dd>Erneuerung des Erscheinungsbildes. Präsentation neuer Produkte. Unterhaltsame Verkaufsförderung.</dd>
+      </dl>
+      <p class="mb-0 muted">Vorgegeben waren Logo und Hausfarbe.</p>
+    </div>
+    <div>
+      <h2 style="font-size:1.6rem">Online-Präsentation</h2>
+      <div class="grid grid--2">
+        <div><a href="http://www.trostel-sportschuhe.com" target="_blank" rel="noopener">{{ m.img(I~'website.jpg', 'Internetseite Trostel', 'inline-img') }}</a><p class="small mt-1"><strong>Internetseite:</strong> Erstellung einer Internetseite mit komplettem Warenangebot. Kunden- und Händlerseite. <a href="http://www.trostel-sportschuhe.com" target="_blank" rel="noopener">www.trostel-sportschuhe.com</a></p></div>
+        <div><a href="http://www.trostel-shop.com" target="_blank" rel="noopener">{{ m.img(I~'shop.jpg', 'Online-Shop Trostel', 'inline-img') }}</a><p class="small mt-1"><strong>Online-Shop:</strong> Erstellung eines Online-Shops (separat) mit komplettem Warenangebot. <a href="http://www.trostel-shop.com" target="_blank" rel="noopener">www.trostel-shop.com</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Print</h2><p>Herstellung aller Warenkataloge.</p></div>
+    <div class="discs">
+      <div class="disc"><a href="http://www.trostel-sportschuhe.com/seiten/TROSTEL-Hauptprospekt_Web.pdf" target="_blank" rel="noopener">{{ m.img(I~'TROSTEL-Hauptprospekt.jpg', 'Hauptkatalog', style='aspect-ratio:auto') }}</a><h3>Hauptkatalog</h3><p>16 Seiten (<a href="http://www.trostel-sportschuhe.com/seiten/TROSTEL-Hauptprospekt_Web.pdf" target="_blank" rel="noopener">PDF hier</a>)</p></div>
+      <div class="disc"><a href="http://www.trostel-sportschuhe.com/seiten/Trostel-Krabbelschuhkatalog-2016-online.pdf" target="_blank" rel="noopener">{{ m.img(I~'Krabbelkatalog-2016.jpg', 'Krabbelschuhe', style='aspect-ratio:auto') }}</a><h3>Krabbelschuhe</h3><p>32 Seiten (<a href="http://www.trostel-sportschuhe.com/seiten/Trostel-Krabbelschuhkatalog-2016-online.pdf" target="_blank" rel="noopener">PDF hier</a>)</p></div>
+      <div class="disc"><a href="http://www.trostel-sportschuhe.com/seiten/Trostel-GYM-Katalog-2017-online.pdf" target="_blank" rel="noopener">{{ m.img(I~'GYM-Katalog.jpg', 'Gymnastikschuhe', style='aspect-ratio:auto') }}</a><h3>Gymnastikschuhe</h3><p>12 Seiten (<a href="http://www.trostel-sportschuhe.com/seiten/Trostel-GYM-Katalog-2017-online.pdf" target="_blank" rel="noopener">PDF hier</a>)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Online-Marketing Facebook/Twitter</h2><p>Unterhaltsame Kampagne für Postings und Anzeigen. Hier drei Beispiele.</p></div>
+    <div class="gallery">
+      <figure>{{ m.img(I~'2-kids-Pferd.jpg', 'Kampagne: Kids') }}</figure>
+      <figure>{{ m.img(I~'Mutti-erzaehlen.jpg', 'Kampagne: Mutti erzählen') }}</figure>
+      <figure>{{ m.img(I~'two-kids-talking.jpg', 'Kampagne: 2 Kids') }}</figure>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap grid grid--2">
+    <div>
+      <h2>Firmen-Video</h2>
+      <p>Ein Familienbetrieb zeigt sich.</p>
+      {{ m.video('NvgJU4NMqu8', 'Firmen-Video', None, 'Video') }}
+    </div>
+    <div>
+      <h2>Trailer „Das Geheimnis von Krabbelschuhen“</h2>
+      <p>Kurz-Trailer / Trickanimation</p>
+      {{ m.video('BdHOgel_CiI', 'Das Geheimnis von Krabbelschuhen', None, 'Trickanimation') }}
+    </div>
+  </div>
+  <div class="wrap mt-1">{{ m.privacy_note() }}</div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Herstellung eines Maskottchens</h2><p>Moisi erscheint in Anzeigen, in Videos und Cartoons.</p></div>
+    <div class="scrapbook">
+      {{ m.polaroid(I~'MOISI.gif', 'Moisi') }}
+      {{ m.polaroid(I~'moisi-fuess-daheim.jpg', 'Moisi') }}
+      {{ m.polaroid(I~'moisi-und-sepp-1.jpg', 'Moisi + Sepp') }}
+      {{ m.polaroid(I~'moisi-und-sepp-3.jpg', 'Moisi + Sepp') }}
+      {{ m.polaroid(I~'moisi-und-sepp-2.jpg', 'Moisi + Sepp') }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Reguläre Schuhwerbung</h2><p>Anzeigen für Print und Online.</p></div>
+    <div class="gallery">
+      {% for p, a in [('Soccer-blue.jpg','Soccer'),('fussball.jpg','Fussball'),('nilpferd.jpg','Nilpferd'),('Geschichten-2.jpg','Story'),('FB-Banner-fussabdruck-gummi.jpg','Kids')] %}
+      <figure>{{ m.img(I~p, a) }}</figure>
+      {% endfor %}
+    </div>
+    <div class="grid grid--2 mt-3">
+      <div><h3>Display und Thekenaufsteller</h3><div class="scrapbook" style="justify-content:flex-start">{{ m.polaroid(I~'display-ani-3+.gif', 'Display') }}{{ m.polaroid(I~'aufsteller-3.jpg', 'Aufsteller') }}</div></div>
+      <div><h3>Sonderaktionen</h3><p>Cartoon für Hauszeitung, Facebook etc.</p>{{ m.img(I~'illu-verkaufsstand.jpg', 'Verkaufsstand', 'inline-img') }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="callout">
+      <h2>Fazit</h2>
+      <p>Dies ist ein bunter Ausschnitt einer Firmenpräsentation. Neue kreative Ideen liegen für Sie bereit. Nennen Sie Ihre Wünsche.</p>
+      <p>Wäre ein Firmen-Video für Ihre Präsentation hilfreich? Oder eine eigene <a href="{{ root }}creativ/hauszeitung.html">Firmen-Hauszeitung</a>?</p>
+      <div class="btn-row"><a class="btn" href="mailto:teflon@fonfara.de">Kontakt</a><a class="btn btn--ghost" href="{{ root }}creativ/index.html">zurück zur Eingangsseite</a></div>
+    </div>
+  </div>
+</section>
+{% endblock %}

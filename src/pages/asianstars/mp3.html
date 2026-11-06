@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+{{ m.page_hero('ASIAN STARS', 'Ältere Videos', 'Live-Mitschnitte aus Cafe Galao, der Kirchheimer Musiknacht, Cafe Nil und mehr.') }}
+<section class="section--tight">
+  <div class="wrap">
+    <div class="video-grid">
+      {{ m.video('_8rFahSoTC0', 'Sternenschlüssel', 'images/filmbilder/sternenschluessel.jpg', 'at Cafe Galao 2016') }}
+      {{ m.video('7udqKWkE8vs', 'Elektro Suse', 'images/filmbilder/electro-suse.jpg', 'at Cafe Galao 2016') }}
+      {{ m.video('_IhDfvde4FE', 'Planet Sinfonia', 'images/filmbilder/planet-sinfonia.jpg', 'Kirchheimer Musiknacht 2016') }}
+      {{ m.video('5RU4sLnpPAo', 'Low Approach', None, 'at Cafe Galao 2016') }}
+      {{ m.video('DQUiFhxghS4', 'Quicksand', 'images/filmbilder/quick-sand.jpg', 'at Cafe Galao 2016') }}
+      {{ m.video('Nb7VMDGLlQM', 'Echoes from Sirius (Part 2)', 'images/filmbilder/echoes-from-sirius.jpg', 'at Cafe Galao 2016') }}
+      {{ m.video('9zo4Nf8H9VE', "Jacob's Way", 'images/filmbilder/jacobs-way.jpg', 'at Musiknacht 2016') }}
+      {{ m.video('2pwk6lxYnoA', 'Noisy', 'images/filmbilder/noisi.jpg', '2009') }}
+      {{ m.video('FMMKSDhdwoE', 'Goa Party', 'images/filmbilder/goaparty.jpg', 'Cafe Nil 2007') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+    <p class="mt-2"><a class="link-arrow" href="{{ root }}asianstars/index.html">zurück zu ASIAN STARS</a></p>
+  </div>
+</section>
+{% endblock %}

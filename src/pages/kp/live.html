@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set MAIL = 'mailto:teflon@fonfara.de?subject=Anfrage%20Frau%20K%C3%A4chele%20und%20Frau%20Peters%20live' %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Die Live-Show</p>
+    <h1>Schwäbische Comedy pur! Das Original.</h1>
+    <p class="lead">Frau Kächele &amp; Frau Peters auf der Bühne – mit Babs Steinbock und Teflon Fonfara.</p>
+    <a class="btn" href="{{ MAIL }}">Anfrage per Mail</a>
+  </div>
+  <div class="page-hero__art" style="max-width:300px">{{ m.polaroid('images/kp/2019/schwaebische-comedy-1.jpg', 'Frau Kächele & Frau Peters', '', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Der aktuelle Song</p>
+      {{ m.video('T22yezRVaKw', 'Der Briefträger kommt ins Haus', 'images/filmbilder/kp-brieftraeger-37.jpg', 'Musik-Video') }}
+    </div>
+    <div class="prose">
+      <h2>Das Bühnenprogramm</h2>
+      <p>2019 kommen Frau Kächele &amp; Frau Peters wieder auf die Bühne mit einer neuen schrillen schwäbischen Performance.</p>
+      <dl class="meta-list">
+        <dt>Babs Steinbock</dt><dd>spielt Frau Kächele</dd>
+        <dt>Teflon Fonfara</dt><dd>spielt Frau Peters</dd>
+      </dl>
+      <p>Gespielt werden Szenen wie „Das Kehrwochenfrühwarnsystem“ oder „Der Busenlift“ und andere Originaltexte aus der SDR-Kultserie.</p>
+      <p>Dazwischen gibt es Songs mit hohem Unterhaltungswert zur Kehrwoche, zur Liebe und zum Hefezopf, und der berühmte Song von Drafi Deutscher heißt jetzt „Marmorkuchen immer bricht, aber unser Hefezopf nicht“!</p>
+      <p><strong>Anfragen für Liveauftritte</strong> an <a href="{{ MAIL }}">teflon@fonfara.de</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="grid grid--2">
+      <div>
+        <p class="eyebrow">Das aktuelle Video</p>
+        {{ m.video('sr1Nj5Ap54k', 'Die Orgasmusschaukel', None, 'Video') }}
+      </div>
+      <div>
+        <p class="eyebrow">Landesschau SWR vom 25.10.2019</p>
+        {{ m.video('ESiMxcSs_z0', 'Teflon Fonfara in SWR Landesschau', 'images/filmbilder/swr-4.jpg', 'TV') }}
+      </div>
+    </div>
+    <div class="mt-1">{{ m.privacy_note() }}</div>
+    <div class="scrapbook mt-2">
+      {{ m.polaroid('images/kp/2019/schwaebische-comedy-2.jpg', '') }}
+      {{ m.polaroid('images/kp/2019/schwaebische-comedy-6.jpg', '') }}
+      {{ m.polaroid('images/kp/2019/schwaebische-comedy-3.jpg', '') }}
+      {{ m.polaroid('images/kp/2019/schwaebische-comedy-5.jpg', '') }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Rückschau: Fotos von der Show 2008</h2><p>Frau Kächele &amp; Frau Peters – die One-Man-Show.</p></div>
+    <div class="gallery">
+      {% for p in ['KP-Show2007-Mundelsheim.jpg','KP-Show_Kornwestheim-3.jpg','KP-Show2007-Mundelsheim2.jpg','KP-Show_kirchheim-7.jpg','KP-Show_Kornwestheim-5.jpg'] %}
+      <figure>{{ m.img('images/kp/pics/' ~ p, 'Frau Kächele & Frau Peters Live-Show 2008') }}</figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

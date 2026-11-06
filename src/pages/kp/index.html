@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Die wilden Hefezopf-Weiber aus SDR 3</p>
+    <h1>Frau Kächele &amp; Frau Peters</h1>
+    <p class="lead">Die wilden „Hefezopf-Weiber“ waren die ersten Radio-Kult-Figuren des SDR, „Radio für den Wilden Süden“. Der „wilde Süden“ ging, der Kult blieb, und zwei schrille Weiber erzählen ihre wildesten Hefezopf-Geschichten. Hier erfährst Du alles über Kult, Sex &amp; Hefezopf … <strong>(mit einem Haufen Butter drin!)</strong></p>
+    <div class="btn-row mt-1">
+      <a class="btn" href="{{ root }}kp/player/player.html">{{ m.play_icon() }} Sketche anhören</a>
+      <a class="btn btn--ghost" href="{{ root }}kp/video.html">Videos ansehen</a>
+    </div>
+  </div>
+  <div class="page-hero__art scrapbook">
+    {{ m.polaroid('images/titelfoto/peters.jpg', 'Frau Peters') }}
+    {{ m.polaroid('images/titelfoto/frau-kaechele.jpg', 'Frau Kächele') }}
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap">
+    {{ m.video('eH85xP1iyKs', 'Die Spätzles-Klappe', 'images/filmbilder/spaetzlesklappe.jpg', 'Schwäbischer Erfindungsgeist', 'Frau Kächele zeigt die wertvollste Erfindung für die Hausfrau.', None, True) }}
+  </div>
+</section>
+
+<section class="section section--sun">
+  <div class="wrap split split--center">
+    <div>
+      <p class="eyebrow" style="color:inherit">Kurzinfo</p>
+      <h2>Die Kult-Comedy-Serie des damaligen SDR. Mundart pur!</h2>
+      <div class="facts">
+        <div class="fact"><b>800+</b><span>Folgen</span></div>
+        <div class="fact"><b>12</b><span>Jahre Laufzeit</span></div>
+        <div class="fact"><b>1</b><span>Mann spricht alle Stimmen</span></div>
+      </div>
+      <p>Es entstanden über 800 Folgen in einer Laufzeit von 12 Jahren. Teflon erfindet die Serie, schreibt alle Folgen, spricht alle Stimmen (Hörfunk) und spielt beide Personen selbst (TV). Die Serie endete 1998 mit der Fusion von SDR und SWF (heute SWR).</p>
+      <p>Im Mittelpunkt steht das Gebäck Hefezopf und der schwäbische Erfinderreichtum. Highlights waren Szenen wie „Die Orgasmusschaukel“ oder „Das Kehrwochen-Frühwarnsystem“. Es entstanden Songs in den Genres Volksmusik, Rock und Techno.</p>
+      <p class="mb-0">Später ging Teflon Fonfara zuerst solo, dann mit Babs Steinbock auf die Bühne. Dazu siehe auch {{ m.yt_link('ESiMxcSs_z0', '<strong>SWR Doku in Landesschau</strong>', 'SWR Landesschau') }}.</p>
+    </div>
+    <div class="scrapbook">
+      {{ m.polaroid('images/kp/comic2/kpmovi.gif', 'Frau Kächele & Frau Peters') }}
+      {{ m.polaroid('images/kp/pics/kp-show_mundelsheim-2.jpg', 'Live-Show') }}
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="eberhard">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Eberhard Kächele</h2>
+      <p><strong>Eberhard Kächele</strong> ist ein Vetter von Frau Kächele, Mitglied der schwäbischen Kächele-Dynastie seit 1986. Dazu <a href="{{ root }}schwaebische-comedy/schwaebische-comedy.html#eberhard">aktuell hier mehr …</a></p>
+    </div>
+    <div class="video-grid">
+      {{ m.video('u6NDENYIpwg', 'Vegane Kuttla', 'images/filmbilder/eberhard-kaechele-vegane-kuttla.jpg', 'Eberhard Kächele singt', 'Ein Song um das Dreifarbenhaus und um vegane Ernährung.') }}
+      {{ m.video('rhWyDU3eiWs', 'Die schwäbische Eisenbahn isch a Sach.', 'images/filmbilder/eisenbahn.jpg', 'Eberhard Kächele', 'Alternative zu „Auf der schwäbsche Eisebahne“.') }}
+      {{ m.video('k-ZC6tbjFhY', 'Heiko mit dem Bollenhut', 'images/filmbilder/bollenhut.jpg', 'Eberhard Kächele', 'Heiko ist ein Schwarzwald-Punk.') }}
+      {{ m.video('YbojXEnQ0IM', 'Stuttgart isch mei Herzensstadt', 'images/filmbilder/stuttgart-herzensstadt.jpg', 'Eberhard Kächele', 'Hymne für die Landeshauptstadt.') }}
+    </div>
+    <p class="mt-2">Mehr Videos: <a href="{{ root }}kp/video.html"><strong>Schwäbische Comedy</strong></a></p>
+    {{ m.privacy_note() }}
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap feature">
+    <div class="cover-wrap"><a href="{{ root }}kp/cd.html">{{ m.img('images/buch/cover-bahnhof.jpg', 'Buchtitel Der neue Bahnhof isch fertig', 'cover') }}</a><div class="sticker"><span><b>NEU</b>Hörspiel</span></div></div>
+    <div>
+      <p class="eyebrow">Neu: Das Hörspiel</p>
+      <h2>Der neue Bahnhof isch fertig</h2>
+      <p class="lead">Die Kultweiber Frau Kächele &amp; Frau Peters aus dem Wilden Süden besichtigen den neuen Stuttgarter Bahnhof und erleben dort unfassbare Abenteuer. Skurrile Geschichten zu Stuttgart 21. Zum Buch kommt hier das Hörspiel!</p>
+      <a class="btn" href="{{ root }}kp/cd.html">Mehr …</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--2">
+      <div>
+        <h2>Xsälzbrot &amp; Hefezopf</h2>
+        <p class="muted">Kurzer Zeichentrick.</p>
+        {{ m.video('Zye2vf2K-40', 'Xsälzbrot & Hefezopf', 'images/filmbilder/xsaelzbrot-hefezopf.jpg', 'Zeichentrick') }}
+      </div>
+      <div>
+        <h2>Rückschau</h2>
+        <p class="muted">Im November 1986 wurde erstmals die Kult-Show „Frau Kächele &amp; Frau Peters“ öffentlich-rechtlich gesendet. Hier haben wir für Euch eine kleine <strong>Rückschau</strong> zusammengestellt mit TV-Auftritten und Splittern aus dem Song „Klinsi we love you“.</p>
+        {{ m.video('3jqO8ji850s', 'Rückschau Frau Kächele & Frau Peters', 'images/filmbilder/kp.jpg', 'TV-Mix') }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap split split--center">
+    <div class="scrapbook">
+      {{ m.polaroid('images/kp/comic2/guitar.jpg', 'Aus der LP „Die total schrille Radio-Show“') }}
+      {{ m.polaroid('images/kp/comic2/Smoke_on_the_water.jpg', 'Smoke on the water') }}
+    </div>
+    <div>
+      <h2>Smoke on the water</h2>
+      <p>Frau Kächele und Frau Peters bei einer Performance am Genfer See. Und wer spielt denn da am Schlagzeug mit? Ist das etwa der <strong>Jazz-Drummer Billy Cobham</strong>? Oder ist dies nur ein Namensvetter, der früher mal in Deizisau mit Gotthilf Fischer gejammt hat?</p>
+      <p>Song: „Smoke überm Backherd“, zum Anhören gehe in unser <a href="{{ root }}kp/player/player.html">MP3-Archiv</a>.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

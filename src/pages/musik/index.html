@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set singles = [
+  ('Looking for Propagation', 'CeKlWo'),
+  ('Process of a Cosmic Fog', 'ALHUUW'),
+  ('The Seduction of Cassiopeia', 'jjPiDA'),
+  ('Spotnik Roller Coaster', 'AiSwqA'),
+  ('A Bright Meeting between Capella and Sirius', 'J0RhgJ'),
+  ('Singing Angel from Orion Nebula', 'WVP3Zb'),
+  ('The Power of the Morning Sun', 'p4QgIK'),
+  ('Creation of the Earth', 'eDHvWJ'),
+  ('Distant Chants of the Polar Star', 'fwHorn'),
+  ('Session at the Pleiades Corner', 'UMnR42'),
+  ('The Flight of the Peace Ambassador', 'YcTAEG'),
+  ('Dance of the Quanta', 'VTF5u5'),
+  ('City Frogs', 'OkUBmu'),
+  ('Pink Horses', 'SiPsEU'),
+  ('Duet of Country Boys', 'xLQtXR'),
+] %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Musik · Projekte · Musik-Comedy</p>
+    <h1>Wir reisen große Entfernungen.</h1>
+    <p class="lead">We travel long distances. – Musik von Teflon Fonfara: vom kosmischen Album über elektro-euphorische Weltmusik bis zur Musik-Comedy.</p>
+  </div>
+  <div class="page-hero__art" style="max-width:300px"><a href="https://listen.music-hub.com/IYAZdZ" target="_blank" rel="noopener">{{ m.polaroid('images/musik/ssiriusengel-image3.jpg', 'Flying Paintings From Abroad', 'Kosmos – Album Flying Paintings From Abroad', 'polaroid--tape') }}</a></div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap feature">
+    <div class="cover-wrap">
+      <a href="https://listen.music-hub.com/IYAZdZ" target="_blank" rel="noopener">{{ m.img('images/musik/cover-flying.jpg', 'Album Flying Paintings From Abroad – Teflon Fonfara', 'cover', 'eager') }}</a>
+    </div>
+    <div>
+      <p class="eyebrow">Album anhören</p>
+      <h2>Flying Paintings From Abroad</h2>
+      <p class="lead">Ein Album von Teflon Fonfara – als komplettes Album oder in Einzeltiteln anhören.</p>
+      <div class="btn-row mb-2">
+        <a class="btn" href="https://listen.music-hub.com/IYAZdZ" target="_blank" rel="noopener">{{ m.play_icon() }} Album anhören</a>
+      </div>
+      <p class="eyebrow">Einzeltitel anhören</p>
+      <ol class="tracklist">
+        {% for t, code in singles %}
+        <li>{{ t }} <a href="https://listen.music-hub.com/{{ code }}" target="_blank" rel="noopener">Anhören ↗</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="section-head"><h2>Projekte</h2><p>Weltmusik, kosmische Tanzmusik und eine Klang-Bild-Installation.</p></div>
+
+    <div class="feature mb-2">
+      <div>
+        {{ m.video('Vw-MeAuUhRI', 'Trailer ASIAN STARS', 'images/musik/asian-stars-2018.jpg', 'Weltmusik') }}
+      </div>
+      <div>
+        <a href="{{ root }}asianstars/index.html">{{ m.img('images/musik/asian-stars-logo-2018.jpg', 'ASIAN STARS', 'logo-img') }}</a>
+        <h3 class="mt-1">ASIAN STARS</h3>
+        <p>Elektro-euphorische <strong>Weltmusik</strong> zur harmonischen Tanz-Erheiterung.</p>
+        <a class="link-arrow" href="{{ root }}asianstars/index.html">Mehr …</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="feature mb-2">
+      <div>
+        {{ m.video('SE29ZMky6OQ', 'Gehn wir auf den Sirius', 'images/filmbilder/gehn-sirius-big.jpg', 'Sirius-Engel') }}
+      </div>
+      <div>
+        <a href="{{ root }}musik/siriusengel.html">{{ m.img('images/musik/logo-siriusengel+.jpg', 'SIRIUS-ENGEL', 'logo-img') }}</a>
+        <div style="max-width:200px" class="mt-1">{{ m.img('images/musik/sirius-engel.jpg', 'SIRIUS-ENGEL', 'inline-img') }}</div>
+        <p class="mt-1">Elektro-magnetische Wechselstrom-Kapelle mit dem kosmischen Tanz zur seelischen Liebkosung.</p>
+        <a class="link-arrow" href="{{ root }}musik/siriusengel.html">Mehr …</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="feature">
+      <div class="cover-wrap">
+        <a href="{{ root }}honigbiene/index.html">{{ m.img('images/elemente/honigbiene.jpg', 'Das Summen der Honigbiene', 'cover') }}</a>
+      </div>
+      <div>
+        <h3>Das Summen der Honigbiene.</h3>
+        <p>Musik und Bild-Installation.<br>Roland Bentz &amp; Teflon Fonfara.</p>
+        <a class="link-arrow" href="{{ root }}honigbiene/index.html">Mehr …</a>
+      </div>
+    </div>
+
+    <p class="mt-3"><strong>Mehr Videos</strong> findest du <a href="{{ root }}video/index.html">hier</a>. <strong>Comedy und Mundart</strong> findest du <a href="{{ root }}kp/video.html">hier</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Musik-Comedy</h2><p>Songs mit Augenzwinkern – zum Anhören und Ansehen.</p></div>
+    <div class="video-grid">
+      {{ m.video('xX2BZ5u0hxs', 'The Länd. The Song. Die Satire.', 'images/filmbilder/titel-laend.jpg', 'Musik-Comedy', 'Comedy zum baden-württembergischen Image-Projekt „The Länd“.<br><a href="https://listen.music-hub.com/0uwy90" target="_blank" rel="noopener">Audio anhören ↗</a>') }}
+      {{ m.video('r5Ogfc5p2oA', 'Der Sommer kommt.', 'images/filmbilder/sommer_kommt.jpg', 'Musik-Comedy', 'Fun-Song vom Wasserfloh im Sommer.<br><a href="https://listen.music-hub.com/8mUIlJ" target="_blank" rel="noopener">Audio anhören ↗</a>') }}
+      {{ m.video('vyRZHEMThPI', 'Fleischsalat', 'images/filmbilder/hengstenberg-25+.jpg', 'Musik-Comedy', 'Werbespot-Comedy für Fleischsalat. Influencer-Party.') }}
+      {{ m.video('13Vq_wIxrdA', 'Du elektrisierst mich. (Das Girl aus Prag)', 'images/filmbilder/prag.jpg', 'Musik-Comedy', 'Ein Rockstar erzählt von seinen Abenteuern auf seiner Welttournee.<br><a href="https://listen.music-hub.com/YW1hye" target="_blank" rel="noopener">Audio anhören ↗</a>') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+{% endblock %}

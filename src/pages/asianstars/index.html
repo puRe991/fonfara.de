@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set andromeda = [
+  ('Airport Andromeda', 'asian-stars--airport-andromeda-1246759'),
+  ('Satellite Dance', 'asian-stars-satellite-dance-1246760'),
+  ('Taxi To Andromeda', 'asian-stars--taxi-to-andromeda-1246757'),
+  ('Quicksand', 'asian-stars--quicksand-1246752'),
+  ('Yellow Stones', 'asian-stars--yellow-stones-1246761'),
+  ('Sign Of The Arrival', 'asian-stars--sign-of-the-arrival-1246754'),
+  ('Spring Station', 'asian-stars-spring-station-1246762'),
+  ('Sunday Morning On The Moon', 'asian-stars--sunday-morning-on-the-moon-1246763'),
+] %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    {{ m.img('asianstars/images/elements/AS-Logo-2018-3.jpg', 'ASIAN STARS', 'logo-img', 'eager') }}
+    <h1 class="mt-1">ASIAN STARS</h1>
+    <p class="lead">Elektro-euphorische Weltmusik zur harmonischen Tanz-Erheiterung.</p>
+    <div class="chips mt-1">
+      <a href="#musiker">Musiker</a><a href="#video">Video</a><a href="#cd">CD</a><a href="#kontakt">Kontakt</a><a href="{{ root }}impressum.html">Impressum</a>
+    </div>
+  </div>
+  <div class="page-hero__art" style="max-width:520px">
+    {{ m.video('Vw-MeAuUhRI', 'Trailer ASIAN STARS', 'asianstars/images/elements/as-1-2018-pic.jpg', 'Trailer') }}
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="musiker">
+  <div class="wrap">
+    <div class="section-head"><h2>Die Musiker</h2><p>ASIAN STARS seit 2001.</p></div>
+    <div class="grid grid--3">
+      <article class="card">
+        <div class="scrapbook" style="justify-content:flex-start">{{ m.polaroid('asianstars/images/pics/tef-4.jpg', '') }}{{ m.polaroid('asianstars/images/pics/Tutti-frutti2.jpg', '') }}</div>
+        <h3 class="mt-1">Teflon Fonfara</h3>
+        <p>E-Gitarre, Electric Sitar, Loopmaschine.</p>
+        <ul class="clean small" style="display:grid;gap:4px">
+          <li>Wer ist Teflon Fonfara: {{ m.yt_link('BT88SRbMZVU', 'Trailer', 'Wer ist Teflon Fonfara?') }}</li>
+          <li>Auftritte Clubs und {{ m.yt_link('O1YT9VlBzcI', 'TV in New York', 'New York Nights') }}</li>
+          <li>{{ m.yt_link('ry7mX-acX10', 'ARD-Portrait Teflon Fonfara') }}</li>
+          <li>Web: <a href="{{ root }}index.html">www.fonfara.de</a></li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="scrapbook" style="justify-content:flex-start">{{ m.polaroid('asianstars/images/pics/tim.jpg', '') }}{{ m.polaroid('asianstars/images/pics/tim-1.jpg', '') }}</div>
+        <h3 class="mt-1">Tim Ackerland</h3>
+        <p>Didgeridoo Natur, keine Effekte.</p>
+      </article>
+      <article class="card">
+        <div class="scrapbook" style="justify-content:flex-start">{{ m.polaroid('asianstars/images/pics/arno2.jpg', '') }}{{ m.polaroid('asianstars/images/pics/arno-3.jpg', '') }}</div>
+        <h3 class="mt-1">Arno Ritter</h3>
+        <p>Percussion. Langjährig unterwegs in House/Techno-Parties.</p>
+      </article>
+    </div>
+    <div class="gallery mt-3">
+      {% for p in ['crowd-6.jpg','crowd-7.jpg','crowd-10.jpg','c-6.jpg','as-7.jpg','AS-4.jpg','AS-6.jpg','crowd-4.jpg'] %}
+      <figure>{{ m.img('asianstars/images/pics/' ~ p, 'ASIAN STARS live') }}</figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="video">
+  <div class="wrap">
+    <div class="section-head"><h2>Video</h2><a class="link-arrow" href="{{ root }}asianstars/mp3.html">Frühere Live-Videos hier</a></div>
+    <div class="video-grid">
+      {{ m.video('QqQvlRm94Bw', 'Elektro Suse (Konzertbeginn)', None, 'Live') }}
+      {{ m.video('4aPEdrbNKHo', 'Satellite Dance (live)', None, 'Live') }}
+      {{ m.video('f2ttvwKfFlg', 'Spring Station (live)', None, 'Live') }}
+      {{ m.video('UdmSIraWHIo', 'Sternenschlüssel (live)', 'images/filmbilder/sternenschluessel.jpg', 'Live') }}
+      {{ m.video('S6v1iqD0rBU', 'Low Approach (live)', None, 'Live') }}
+      {{ m.video('svCSU9-AyTE', 'Quicksand (live)', 'images/filmbilder/quick-sand.jpg', 'Live') }}
+    </div>
+    <div class="mt-2">{{ m.privacy_note() }}</div>
+  </div>
+</section>
+
+<section class="section section--paper2 anchor-offset" id="cd">
+  <div class="wrap">
+    <div class="feature">
+      <div class="cover-wrap">
+        {{ m.img('asianstars/images/elements/cd-andromeda.jpg', 'CD Airport Andromeda', 'cover') }}
+        <div class="sticker"><span><b>53</b>Min.</span></div>
+      </div>
+      <div>
+        <p class="eyebrow">Aktuell</p>
+        <h2>AIRPORT ANDROMEDA</h2>
+        <p class="muted">Gesamtlaufzeit 53 Min. · <a href="http://music.instantlicensing.com/audio/search?cd=AIRPORT+ANDROMEDA&amp;u=Teflon+Fonfara" target="_blank" rel="noopener">Übersicht alle Songs (MP3)</a></p>
+        <p><strong>Inhalt:</strong></p>
+        <ol class="tracklist">
+          {% for t, slug in andromeda %}
+          <li>{{ t }} <a href="http://music.instantlicensing.com/audio/{{ slug }}" target="_blank" rel="noopener">MP3 holen ↗</a></li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+
+    <div class="grid grid--2 mt-3">
+      <div class="callout">
+        <h3>CD bestellen</h3>
+        <p><strong>1.</strong> Bitte überweise Euro 18,00 auf das Konto<br>
+        IBAN: DE36100100100876391121<br>BIC: PBNKDEFF<br>Kontoinhaber: Teflon Fonfara</p>
+        <p class="mb-0"><strong>2.</strong> Dann schick mir eine Mail an <a href="mailto:teflon@fonfara.de?subject=CD%20Asian%20Stars">teflon@fonfara.de</a> mit Angabe „CD Asian Stars“ und mit Deiner Adresse, die CD wird an Dich verschickt.</p>
+      </div>
+      <div class="card">
+        {{ m.img('asianstars/images/pics/cover-andromeda-innen.jpg', 'CD Airport Andromeda – Innenseite', 'inline-img') }}
+        {{ m.img('asianstars/images/elements/label-as.jpg', 'CD-Label ASIAN STARS', 'inline-img', style='max-width:160px;margin-top:16px') }}
+      </div>
+    </div>
+
+    <h3 class="mt-3">Weitere Alben</h3>
+    <div class="discs mt-1">
+      <div class="disc">{{ m.img('asianstars/images/elements/bluehouse-cover.jpg', 'Live at Blue House') }}<h3>LIVE AT BLUE HOUSE</h3><p>CD sold out. <a href="http://music.instantlicensing.com/audio/search?cd=Live+at+Blue+House&amp;u=Teflon+Fonfara" target="_blank" rel="noopener">MP3 hier</a></p></div>
+      <div class="disc">{{ m.img('asianstars/images/elements/cover-dance-of-cosmic.jpg', 'Dance of the Cosmic Echoes') }}<h3>DANCE OF THE COSMIC ECHOES</h3><p>CD sold out. <a href="http://music.instantlicensing.com/audio/search?cd=DANCE+OF+COSMIC+ECHOES&amp;u=Teflon+Fonfara" target="_blank" rel="noopener">MP3 hier</a></p></div>
+      <div class="disc">{{ m.img('asianstars/images/elements/CoverAS-Burg.jpg', 'Live at Burg Hohen Neuffen') }}<h3>LIVE AT BURG HOHEN NEUFEN</h3><p>CD sold out.</p></div>
+      <div class="disc">{{ m.img('asianstars/images/elements/cover-buddhabad.jpg', 'Live im Buddha Bad') }}<h3>LIVE IM BUDDHA BAD</h3><p>CD sold out.</p></div>
+      <div class="disc">{{ m.img('asianstars/images/elements/cover-shiva.jpg', 'Shiva Party') }}<h3>SHIVA PARTY</h3><p>CD sold out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section anchor-offset" id="kontakt">
+  <div class="wrap split split--center">
+    <div>
+      <p class="eyebrow">Kontakt</p>
+      <h2>ASIAN STARS buchen</h2>
+      <address style="font-style:normal" class="lead">
+        ASIAN STARS<br>Teflon Fonfara<br>Filderstr. 19<br>D – 70180 Stuttgart<br>
+        Telefon <a href="tel:+497116405308">+49 (0)711 6405308</a><br>
+        Mail: <a href="mailto:teflon@fonfara.de">teflon@fonfara.de</a>
+      </address>
+      <p>Web: <a href="http://www.asianstars.de">www.asianstars.de</a> · <a href="http://www.asianstars.de">www.asian-stars.de</a></p>
+      <p><a href="{{ root }}impressum.html">Impressum – Datenschutzerklärung hier</a>.</p>
+    </div>
+    <div class="scrapbook">
+      {{ m.polaroid('asianstars/images/pics/tef3.jpg', 'Teflon') }}
+      {{ m.polaroid('asianstars/images/pics/arno.jpg', 'Arno') }}
+      {{ m.polaroid('asianstars/images/pics/tim2.jpg', 'Tim') }}
+    </div>
+  </div>
+</section>
+{% endblock %}

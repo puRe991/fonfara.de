@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set MAIL = 'mailto:teflon@fonfara.de?subject=Anmeldung%20zum%20Meditationsabend.' %}
+{% block content %}
+<section class="wrap page-hero page-hero--split">
+  <div>
+    <p class="eyebrow">Dienstagstreff in Stuttgart-Süd · seit 1992</p>
+    <h1>Meditation in Stuttgart</h1>
+    <p class="lead">Meditation, Gespräch, Spaß und Selbstheilung.</p>
+  </div>
+  <div class="page-hero__art">{{ m.polaroid('dienstagstreff/images/tef-fonfara.jpg', 'Tef Fonfara', '', 'polaroid--tape') }}</div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap">
+    <div class="callout">
+      <h2>Der Dienstagskreis wird nicht mehr öffentlich angeboten.</h2>
+      <p>In kleinen privaten Gruppen kann der Meditationsabend auf Absprache dennoch sporadisch stattfinden. Wenn dich das interessiert und du dabei sein möchtest, schreibe mir.</p>
+      <a class="btn" href="{{ MAIL }}">Kontakt: teflon@fonfara.de</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <div class="card">
+        <h3>Der Abend</h3>
+        <dl class="meta-list">
+          <dt>Thema</dt><dd>Dauer 1 Std.</dd>
+          <dt>Pause</dt><dd>kleine Pause</dd>
+          <dt>Danach</dt><dd><strong>Licht-Atem-Meditation</strong>, ca. 45 Min.</dd>
+          <dt>Gesamt</dt><dd>ca. 2 Std.</dd>
+        </dl>
+        <p>Seminar für Entspannungs-Meditation und mentale Übungen:</p>
+        <ul class="clean stack" style="--gap:.4rem">
+          <li>✶ Wie ändere ich meine Zukunft?</li>
+          <li>✶ Wie verändere ich meine Ausstrahlung?</li>
+          <li>✶ Wie heile ich mich selbst?</li>
+        </ul>
+        <p class="mt-1 mb-0">Wenn Dich diese Themen interessieren, bist Du herzlich willkommen.</p>
+      </div>
+      <div class="grid grid--2 mt-2">
+        <a href="{{ root }}meditation/cd.html" class="card card--link" style="text-decoration:none">{{ m.img('images/meditation/medi-cd-mini.jpg', 'CD Licht-Atem-Meditation', 'inline-img') }}<p class="mt-1 mb-0 small">CD &amp; Download</p></a>
+        <a href="{{ root }}buecher.html#transformation" class="card card--link" style="text-decoration:none">{{ m.img('dienstagstreff/images/titel-transformation-klein.jpg', 'Die Kraft der spirituellen Transformation von Tef Fonfara', 'inline-img') }}<p class="mt-1 mb-0 small">Die Kraft der spirituellen Transformation. Info …</p></a>
+      </div>
+    </div>
+    <div class="prose">
+      {{ m.img('images/elemente/dienstagstreff.jpg', 'Meditation Stuttgart in Stuttgart Süd, dienstags', 'inline-img') }}
+      <h2 class="mt-2">Unser Dienstagstreff</h2>
+      <p class="lead"><strong>Humor – Harmonie – Heilung bedeuten dasselbe.</strong></p>
+      <p>Es ist gedacht, Menschen zusammenzuführen, die interessiert sind, mit Spaß ihr gedankliches Spektrum zu erweitern, und bei einer einfachen Entspannungs-Meditation Körper und Seele zu erfrischen.</p>
+      <p>Jeder darf sich angesprochen fühlen, jeder kann gerne dazukommen und dabei sein. Auch Anfänger sind herzlich willkommen.</p>
+      <p>Am Anfang erlernen wir die Basis. Die Themen zu weltlich-spirituellen Gesetzmäßigkeiten bauen sich wöchentlich in einer logischen Folge auf. Quereinsteiger sind dennoch willkommen.</p>
+      <p>Wir sprechen über mentale Möglichkeiten und magische Zusammenhänge. Wir erlernen einfache Übungen, um unsere Persönlichkeit positiv zu verändern und um die eigene Zukunft zu beeinflussen. Dies geschieht über Visualisierung, Atmung und erweiterte Denkmodelle. Es betrifft alle unsere Bereiche wie Erfolg, Gesundheit, Partnerschaft und vieles mehr.</p>
+      <p>Nach der Pause gehen wir über zur gemeinsamen <a href="{{ root }}meditation/index.html"><strong>Licht-Atem-Meditation</strong></a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper2">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>Durch den Abend begleitet Dich Teflon Fonfara.</h2>
+      <p>Viele kennen ihn auch aus den Medien. Die ARD zeigte mehrere Filme über ihn. Er war musikalisch in den Charts und in SDR brachte er 12 Jahre lang mit Comedy Woche für Woche die Menschen zum Lachen. Auftritte als Musiker in New York.</p>
+      <p>ARD-Film über Tef Fonfara {{ m.yt_link('ry7mX-acX10', 'hier', 'ARD-Portrait Teflon Fonfara') }}. In Wikipedia <a href="http://de.wikipedia.org/wiki/Teflon_Fonfara" target="_blank" rel="noopener">hier</a>. Künstler-Homepage <a href="{{ root }}index.html">hier</a>.</p>
+      <p>Tef Fonfara entwickelte seine <strong>Licht-Atem-Meditation</strong> und setzt diese heilsame Übung seit 1986 in Seminaren, Kursen und Einzelsitzungen ein.</p>
+    </div>
+    <div class="prose">
+      <p>Die <strong>Licht-Atem-Meditation</strong> ist eine sehr einfache Übung. Sie dient anfangs als Einstieg in die Entspannung. Erfahrene verstehen es, mit der eigenen Atmung und mentalen Kraft den Gesundheitszustand zu steuern und Licht in jede erdenkliche Situation zu „atmen“.</p>
+      <p>Das bedeutet, wir erlernen, mit unserer mentalen Kraft Dinge, Leben, Situationen positiv zu beeinflussen. Dadurch erhalten wir eine andere Denkweise, verlieren Ängste und können unser Leben in die Hand nehmen.</p>
+      <p>Die Licht-Atem-Meditation ist eine universelle Übung und beinhaltet viele Möglichkeiten, Wege und Richtungen. Diese Übung ist die Basis für den Einstieg in eine wunderbare und unkomplizierte Welt. Es bleibt Dir überlassen, was Du daraus machst. Selbstverständlich kannst Du auch mit diesen Fähigkeiten beginnen, Deine Zukunft mental zu beeinflussen oder in Gedanken an Deiner Karriere oder an einem Projekt basteln. Deine Gedanken sind grenzenlos, dann sei es auch Du.</p>
+      <p>Diese Übung ersetzt nicht ärztliche Behandlungen. Aber wenn Du beginnst, Dich selbst zu heilen, kannst Du anderen eine Menge Arbeit abnehmen.</p>
+      <p>Du kannst die Licht-Atem-Meditation in voller Länge kostenlos nutzen unter <a href="{{ root }}meditation/index.html">www.online-meditation.de</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <h2>Termine &amp; Infos</h2>
+    <div class="table-wrap">
+      <table class="info">
+        <tr><th>Termine</th><td><strong>Dienstags in loser Folge.</strong> Während der Ferien findet der Kurs nur auf Anfrage statt.</td></tr>
+        <tr><th>Aktuell</th><td>Sommerpause</td></tr>
+        <tr><th>Uhrzeit</th><td>Einlass 18.45 Uhr, Beginn 19 Uhr, Dauer ca. 2 Std.</td></tr>
+        <tr><th>Wer kann mitmachen?</th><td>Alle die sich für diese Themen interessieren.</td></tr>
+        <tr><th>Bitte mitbringen</th><td>Bequeme Kleidung, eine Decke, Isomatte und/oder ein Meditationskissen. Evtl. auch etwas Wasser zum Trinken.</td></tr>
+        <tr><th>Bitte nicht mitbringen</th><td>Bitte kein Parfüm anlegen.</td></tr>
+        <tr><th>Kosten</th><td>€ 12,–/Abend oder weniger: Du gibst, was Du geben möchtest oder kannst. Wenn Du grad knapp bist, musst Du nichts geben.</td></tr>
+        <tr><th>Anmeldung</th><td>Anmeldung erforderlich per <a href="{{ MAIL }}">Mail</a> an <a href="{{ MAIL }}">teflon@fonfara.de</a></td></tr>
+        <tr><th>Ort</th><td>70180 Stuttgart-Süd, Filderstr. 19 (privat) – oberste Türglocke · <a href="https://www.openstreetmap.org/search?query=Filderstra%C3%9Fe%2019%2C%2070180%20Stuttgart" target="_blank" rel="noopener">Lageplan</a></td></tr>
+        <tr><th>Verbindung</th><td><strong>Bus 43:</strong> Die Haltestelle „Markuskirche“ ist direkt vor dem Haus. Vom Marienplatz sind es zu Fuß 5 Min. Marienplatz: U1, U9, U34, Bus 41, Bus 43, Zahnradbahn. <a href="https://www.vvs.de" target="_blank" rel="noopener">Fahrplan hier</a> (als Ziel „Markuskirche“ eingeben).</td></tr>
+      </table>
+    </div>
+    <p class="small mt-2">Alle im Seminar vorgeschlagenen Tipps für Heilung und Wohlbefinden ersetzen nicht ärztliche Behandlungen. Kursbesucher handeln in jedem Fall in Eigenverantwortung. Der Meditationskurs unterliegt keiner politischen, religiösen oder gar sektenähnlichen Gruppierung.</p>
+    <p class="small">Alle Ton-, Bild- und Text-Inhalte dieser Seiten sind urheberrechtlich geschützt: Alle Rechte © copyright by Teflon Fonfara</p>
+  </div>
+</section>
+{% endblock %}
